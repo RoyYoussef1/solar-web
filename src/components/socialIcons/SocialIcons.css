@@ -1,0 +1,20 @@
+.social-icon{
+    max-width: 30px;
+    display: block;
+}
+.social-icon img{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.social-icons{
+    display: flex;
+    max-width: 250px;
+    gap: 10px;
+}
+@media screen and (max-width: 568px) {
+    .social-icons{
+        justify-content: center;
+    }
+}
