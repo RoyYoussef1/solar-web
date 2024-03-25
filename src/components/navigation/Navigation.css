@@ -42,3 +42,65 @@
     color: #1a1819;
     border-bottom: 2px solid #f6a235;
 }
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+}
+.burger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: 300ms ease-in-out;
+}
+.burger-icon span:before,
+.burger-icon span:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: 300ms ease-in-out;
+}
+.burger-icon span:before {
+    transform: translateY(-8px);
+    position: absolute;
+}
+.burger-icon span:after {
+    transform: translateY(8px);
+    position: absolute;
+}
+.burger-icon.active-nav span:after {
+    transform:rotate(90deg);
+}
+.burger-icon.active-nav span {
+    transform:rotate(45deg);
+}
+.burger-icon.active-nav span:before {
+    transform:translateX(90px);
+}
+@media screen and (max-width: 1024px) {
+    .burger-icon {
+        display: block;
+    }
+
+    .navigation-links,
+    .button-container {
+        display: none;
+    }
+
+    .navigation-links.show,
+    .button-container.show {
+        display: block; 
+    }
+}
+.mobile-menu.show {
+    display: block;
+}
+.mobile-menu.hide {
+    display: none;
+}
