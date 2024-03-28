@@ -33,7 +33,7 @@
 .logo-container{
     max-width: 140px;
     border-right: 1px solid #E7DFD5;
-    padding-right: 40px;
+    padding-right: 30px;
 }
 .logo-container img{
     display: block;
@@ -108,9 +108,13 @@
 }
 @media screen and (max-width: 568px) {
     .navigation-container{
-        padding: 25px;
+        padding: 25px 10px;
     }
     .burger-icon {
         right: 25px;
+    }
+    .logo-container {
+        max-width: 125px;
+        padding-right: 15px;
     }
 }

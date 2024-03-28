@@ -1,9 +1,11 @@
 import React from "react";
+import "./Footer.css";
 import { BrowserRouter, NavLink } from "react-router-dom";
 
-import LogoIcon from "../../assets/newLogo.png";
 
-import "./Footer.css";
+import FooterLogo from "../../assets/logoFooter.png";
+
+
 import SocialIcons from "../socialIcons/SocialIcons";
 
 const Footer = () => {
@@ -13,7 +15,7 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-wrapper">
             <div className="footer-column">
-                <div className="footer-logo"><NavLink to="/"><img src={LogoIcon} alt="Logo" className="logo-icon" /></NavLink></div>
+                <div className="footer-logo"><NavLink to="/"><img src={FooterLogo} alt="Logo" className="logo-icon" /></NavLink></div>
                 <div className="footer-text">We Offer a Wide Range of Quality Solar Panel Installation Services.</div>
                 <div className="footer-contact">
                     <div className="email"><a href="mailto:needhelp@company.com">needhelp@company.com</a></div>

@@ -3,7 +3,7 @@ import "./Navigation.css";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 // Import your logo icon
-import LogoIcon from "../../assets/newLogo.png";
+import HeaderLogo from "../../assets/logoHeader.png";
 
 //Components
 import Home from "../../pages/home/Home";
@@ -25,7 +25,7 @@ const Navigation = () => {
           <div className="navigation-container">
             <div className="logo-container">
               <NavLink to="/">
-                <img src={LogoIcon} alt="Logo" className="logo-icon" />
+                <img src={HeaderLogo} alt="Logo" className="logo-icon" />
               </NavLink>
             </div>
             <div
