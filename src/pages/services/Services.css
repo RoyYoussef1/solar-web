@@ -1,7 +1,17 @@
 .services-wrap {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 35px;
-    flex-wrap: wrap;
+    justify-content: center;
     padding: 50px 0;
+}
+@media screen and (max-width: 1200px) {
+    .services-wrap {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .services-wrap {
+        grid-template-columns: auto;
+    }
 }
