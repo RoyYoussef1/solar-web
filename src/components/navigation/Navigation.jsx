@@ -113,6 +113,14 @@ const Navigation = () => {
             Projects
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/services"
+            className={({ isActive }) => (isActive ? "active-nav" : "")}
+          >
+            Services
+          </NavLink>
+        </li>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
