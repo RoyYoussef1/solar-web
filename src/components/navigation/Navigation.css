@@ -90,7 +90,7 @@
 .mobile-menu.hide {
     display: none;
 }
-.mobile-menu{
+.mobile-menu li a{
     color: #1a1819;
 }
 @media screen and (max-width: 1024px) {
