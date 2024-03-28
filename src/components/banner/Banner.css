@@ -1,0 +1,44 @@
+.banner-section{
+    transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 150px 10px;
+}
+.text-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.text-container{
+    color: #fff;
+    text-align: center;
+}
+.banner-title{
+    font-size: 44px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.banner-teaser{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+    .banner-title{
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+    .banner-teaser{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .banner-section{
+        padding: 100px 10px;
+    }
+    .banner-title{
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+    .banner-teaser{
+        font-size: 14px;
+    }
+}
