@@ -1,0 +1,60 @@
+.hero-section{
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 0 10px;
+}
+.hero-wrapper{
+    padding: 150px 75px;
+    color: #fff;
+}
+.hero-btn{
+    display: block !important;
+}
+.hero-title{
+    font-size: 72px;
+    font-weight: 700;
+    padding-bottom: 35px;
+}
+.hero-teaser{
+    font-size: 18px;
+    padding-bottom: 30px;
+    font-weight:500;
+}
+@media screen and (max-width: 1024px) {
+    .hero-container .button-container {
+        display: block !important;
+    }
+    .hero-wrapper{
+        padding: 120px 45px;
+    }
+    .hero-title{
+        font-size: 48px;
+        padding-bottom: 30px;
+    }
+    .hero-teaser{
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero-wrapper{
+        padding: 100px 35px;
+    }
+    .hero-title{
+        font-size: 36px;
+    }
+    .hero-teaser{
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .hero-wrapper{
+        padding: 100px 20px;
+    }
+    .hero-title{
+        font-size: 36px;
+    }
+    .hero-teaser{
+        padding-bottom: 15px;
+    }
+}

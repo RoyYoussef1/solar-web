@@ -94,12 +94,10 @@
     .burger-icon {
         display: block;
     }
-
     .navigation-links,
     .button-container {
         display: none;
     }
-
     .navigation-links.show,
     .button-container.show {
         display: block; 
