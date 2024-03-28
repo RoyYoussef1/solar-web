@@ -90,6 +90,9 @@
 .mobile-menu.hide {
     display: none;
 }
+.mobile-menu{
+    color: #1a1819;
+}
 @media screen and (max-width: 1024px) {
     .burger-icon {
         display: block;
