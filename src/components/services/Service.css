@@ -30,3 +30,8 @@
     padding-bottom: 30px;
     color: #7B7B7B;
 }
+@media screen and (max-width: 568px) {
+    .service-image, .services-section {
+        max-width: 370px;
+    }
+}

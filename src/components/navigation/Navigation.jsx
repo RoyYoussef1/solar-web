@@ -3,7 +3,7 @@ import "./Navigation.css";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 // Import your logo icon
-import LogoIcon from "../../assets/logo.png";
+import LogoIcon from "../../assets/newLogo.png";
 
 //Components
 import Home from "../../pages/home/Home";

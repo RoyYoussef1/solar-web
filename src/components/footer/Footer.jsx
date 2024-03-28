@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, NavLink } from "react-router-dom";
 
-import LogoIcon from "../../assets/logo.png";
+import LogoIcon from "../../assets/newLogo.png";
 
 import "./Footer.css";
 import SocialIcons from "../socialIcons/SocialIcons";
