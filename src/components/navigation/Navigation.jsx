@@ -11,6 +11,7 @@ import About from "../../pages/about/About";
 import Contact from "../../pages/contact/Contact";
 import Projects from "../../pages/projects/Projects";
 import Button from "../button/Button";
+import Services from "../../pages/services/Services";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -66,6 +67,14 @@ const Navigation = () => {
                   Projects
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) => (isActive ? "active-nav" : "")}
+                >
+                  Services
+                </NavLink>
+              </li>
             </div>
             <Button buttonLabel={"Get a Quote"} buttonURL={"/contact"}></Button>
           </div>
@@ -110,6 +119,7 @@ const Navigation = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </BrowserRouter>
   );
