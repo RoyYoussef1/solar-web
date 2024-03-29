@@ -92,7 +92,7 @@ const Home = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <SectionIntro title={"Our Services"} text={"WHAT WE DO"} />
+      <div className="home-second-sec-intro"><SectionIntro title={"Our Services"} text={"WHAT WE DO"} /></div>
       <div className="services-home-wrap">
         <Service
           title={"Solar Technology"}
