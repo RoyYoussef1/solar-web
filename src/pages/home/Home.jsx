@@ -7,6 +7,12 @@ import Service from '../../components/services/Service'
 import ServiceImage1 from '../../assets/service-01.jpg'
 import ServiceImage2 from '../../assets/service-02.jpg'
 import ServiceImage3 from '../../assets/service-03.jpg'
+import SectionIntro from '../../components/sectionIntro/SectionIntro'
+import HouseImage from '../../assets/roof-top-with-solar-panels-for-green-energy.jpg'
+import AfricanGirl from '../../assets/africa-solar-energy-concept.jpg'
+import GirlImage from '../../assets/young-technology-lifestyle-indoor-person.jpg'
+import ElecImage from '../../assets/worker-installing-solar-panels.jpg'
+import Case from '../../components/case/Case'
 
 const Home = () => {
 
@@ -27,13 +33,14 @@ const Home = () => {
   return (
     <div>
       <Hero {...content} />
-      <div className="services-intro-wrap">
-        <div className='services-intro'>
-          <span className='line'></span>
-          <h4>WHAT WE DO</h4>
-          <h1>Our Services</h1>
-        </div>
+      <SectionIntro title={'Latest Case Studies'} text={'RECENT PROJECTS'} />
+      <div className="test">
+        <Case image={HouseImage} type={'Installations'} title={'Tile & Metal Roof Installations'} URL={'/services'} />
+        <Case image={AfricanGirl} type={'Consulting'} title={'Commercial Solar Inspections'} URL={'/services'} />
+        <Case image={GirlImage} type={'Case Studies'} title={'Solar Research Development'} URL={'/services'} />
+        <Case image={ElecImage} type={'Installations'} title={'Solar Panel Installation'} URL={'/services'} />
       </div>
+      <SectionIntro title={'Our Services'} text={'WHAT WE DO'} />
       <div className='services-home-wrap'>
         <Service title={'Solar Technology'} text={'Test1234'} image={ServiceImage1}/>
         <Service title={'Solar Installation'} text={'Test1234'} image={ServiceImage2}/>

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Case.css'
 import { Link } from 'react-router-dom'
 
 const Case = ({image, type, title, URL}) => {
@@ -15,7 +16,7 @@ const Case = ({image, type, title, URL}) => {
                     <span className='line'></span>
                     <div className="case-type">{type}</div>
                     <div className="case-title">{title}</div>
-                    <Link to={URL}>Read More</Link>
+                    <Link to={URL}></Link>
                 </div>
             </div>
         </div>

@@ -1,23 +1,11 @@
-.services-intro-wrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    padding-top: 30px;
-}
-h4{
-    color: #7B7B7B;
-}
-.services-intro .line {
-    width: 16px;
-    display: inline-block;
-    border: 1.5px solid #F6A235;
-}
 .services-home-wrap {
     display: flex;
     justify-content: center;
     gap: 35px;
-    padding: 30px 0;
+    padding-bottom: 30px;
     flex-wrap: wrap;
+}
+.test{
+    display: flex;
+    justify-content: center;
 }

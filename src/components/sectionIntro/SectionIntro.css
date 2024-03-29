@@ -1,0 +1,17 @@
+.section-intro-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+h4{
+    color: #7B7B7B;
+}
+.section-intro .line {
+    width: 16px;
+    display: inline-block;
+    border: 1.5px solid #F6A235;
+}
