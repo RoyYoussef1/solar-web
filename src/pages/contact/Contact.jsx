@@ -33,7 +33,7 @@ const Contact = () => {
       <div className="contact-map-wrapper">
         <iframe src="https://snazzymaps.com/embed/591714" width="99.81%" height="450px"></iframe>
       </div>
-      {/* <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="from_name" />
         <label>Email</label>
@@ -41,7 +41,7 @@ const Contact = () => {
         <label>Message</label>
         <textarea name="message" />
         <input type="submit" value="Send" />
-      </form> */}
+      </form>
     </div>
   );
 };
