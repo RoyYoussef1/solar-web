@@ -16,7 +16,7 @@ const Case = ({image, type, title, URL}) => {
                     <span className='line'></span>
                     <div className="case-type">{type}</div>
                     <div className="case-title">{title}</div>
-                    <Link to={URL}></Link>
+                    <Link to={URL}>Read More</Link>
                 </div>
             </div>
         </div>

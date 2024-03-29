@@ -5,7 +5,20 @@
     padding-bottom: 30px;
     flex-wrap: wrap;
 }
-.test{
+.home-cases{
     display: flex;
     justify-content: center;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: #f6a235;
+}
+.swiper-pagination-bullet-active{
+    background: #f6a235 !important;
+}
+.swiper-pagination-bullet{
+    opacity: 1;
+    background-color: #1a1819;
+}
+.first-home-sec-intro{
+    background-color: #FAF5EF;
 }

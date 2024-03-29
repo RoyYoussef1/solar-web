@@ -7,8 +7,10 @@
     padding-top: 30px;
     padding-bottom: 20px;
 }
-h4{
+h4 {
     color: #7B7B7B;
+    margin: 0;
+    padding: 20px 0;
 }
 .section-intro .line {
     width: 16px;
