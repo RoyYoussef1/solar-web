@@ -37,8 +37,28 @@ const Home = () => {
   return (
     <div>
       <Hero {...content} />
+      <div className="home-second-sec-intro">
+        <SectionIntro title={"Our Services"} text={"WHAT WE DO"} />
+      </div>
+      <div className="services-home-wrap">
+        <Service
+          title={"Solar Technology"}
+          text={"Test1234"}
+          image={ServiceImage1}
+        />
+        <Service
+          title={"Solar Installation"}
+          text={"Test1234"}
+          image={ServiceImage2}
+        />
+        <Service
+          title={"Solar Equipment"}
+          text={"Test1234"}
+          image={ServiceImage3}
+        />
+      </div>
       <div className="first-home-sec-intro">
-        <SectionIntro title={"Latest Case Studies"} text={"RECENT PROJECTS"}/>
+        <SectionIntro title={"Latest Case Studies"} text={"RECENT PROJECTS"} />
       </div>
       <div className="home-cases">
         <Swiper
@@ -91,24 +111,6 @@ const Home = () => {
             />
           </SwiperSlide>
         </Swiper>
-      </div>
-      <div className="home-second-sec-intro"><SectionIntro title={"Our Services"} text={"WHAT WE DO"} /></div>
-      <div className="services-home-wrap">
-        <Service
-          title={"Solar Technology"}
-          text={"Test1234"}
-          image={ServiceImage1}
-        />
-        <Service
-          title={"Solar Installation"}
-          text={"Test1234"}
-          image={ServiceImage2}
-        />
-        <Service
-          title={"Solar Equipment"}
-          text={"Test1234"}
-          image={ServiceImage3}
-        />
       </div>
     </div>
   );
