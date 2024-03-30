@@ -45,3 +45,8 @@ h1 {
         letter-spacing: 0.5px;
     }
 }
+@media screen and (max-width: 430px){
+    h1 {
+        font-size: 22px;
+    }
+}
