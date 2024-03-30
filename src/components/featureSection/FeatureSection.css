@@ -65,3 +65,68 @@ p{
     height: 1px;
     background-color: #E5E5E5;
 }
+@media screen and (max-width: 1024px){
+    .feature-section-image-wrapper{
+        padding: 50px 20px 50px 55px;
+    }
+    .feature-learn {
+        padding-top: 30px;
+        gap: 90px;
+    }
+    p{
+        padding-bottom: 10px;
+    }
+    .features {
+        padding-top: 15px;
+    }
+    .learn-btn .button-container{
+        display: block !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .feature-section-image-wrapper{
+        padding: 30px 20px 30px 45px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .feature-wrapper {
+        display: block;
+    }
+    .about-feature {
+        padding: 15px 20px 15px 45px;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 520px){
+    .feature-section-image-wrapper {
+        padding: 30px 30px 15px;
+        width: auto;
+    }
+    .about-feature {
+        padding: 15px 30px;
+        width: auto;
+    }
+    .feature-text h3 {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        max-width: 150px;
+        font-size: 16px;
+    }
+    p {
+        font-size: 13px;
+    }
+    .call-question{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 430px){
+    .feature-learn {
+        gap: 55px;
+    }
+}
+@media screen and (max-width: 390px){
+    .feature-learn {
+        gap: 30px;
+    }
+}

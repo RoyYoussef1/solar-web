@@ -26,3 +26,22 @@ h1 {
     display: inline-block;
     border: 1.5px solid #F6A235;
 }
+@media screen and (max-width: 1024px){
+    h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .section-intro-wrap {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h4 {
+        padding: 15px 0;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+}
