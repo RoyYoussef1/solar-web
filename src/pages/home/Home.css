@@ -26,3 +26,6 @@
 .home-second-sec-intro{
     text-align: center;
 }
+.second-feature-section .feature-section-image-wrapper img {
+    box-shadow: none;
+}
