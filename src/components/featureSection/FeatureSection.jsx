@@ -24,8 +24,9 @@ const FeatureSection = ({
             <img src={image} alt="feature" />
           </div>
           <div className="about-feature">
-            <SectionIntro title={title} text={teaser} />
+            <div className="about-feature-sec-intro"><SectionIntro title={title} text={teaser} /></div>
             <p>{smallText}</p>
+            <span className="feature-grey-line"></span>
             <div className="features">
               {featuresWithIcon.map((feature, index) => {
                 return (
@@ -34,13 +35,14 @@ const FeatureSection = ({
                       <img src={feature.icon} alt="icon" />
                     </div>
                     <div className="feature-text">
-                      <h4>{feature.title}</h4>
+                      <h3>{feature.title}</h3>
                       <p>{feature.text}</p>
                     </div>
                   </div>
                 );
               })}
             </div>
+            <span className="feature-grey-line"></span>
             <div className="feature-learn">
               <div className="learn-btn">
                 <Button

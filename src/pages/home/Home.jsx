@@ -18,6 +18,10 @@ import AfricanGirl from "../../assets/africa-solar-energy-concept.jpg";
 import GirlImage from "../../assets/young-technology-lifestyle-indoor-person.jpg";
 import ElecImage from "../../assets/worker-installing-solar-panels.jpg";
 import Case from "../../components/case/Case";
+import FeatureSection from "../../components/featureSection/FeatureSection";
+import EnergyPerson from "../../assets/electrician-installing-solar-panels.jpg";
+import IconImage1 from "../../assets/icon-1-1.png";
+import IconImage2 from "../../assets/icon-2-1.png";
 
 const Home = () => {
   const content = {
@@ -37,6 +41,31 @@ const Home = () => {
   return (
     <div>
       <Hero {...content} />
+      <FeatureSection
+        title={"Energy Source for a Better Life"}
+        teaser={"OUR INTRODUCTION"}
+        smallText={'Lorem ipsum dolor sit amet, consectetur adipisicing elit sed deiusmod tempor incididunt ut labore et dolore magna aliqua. Donec scelerisque dolor id nunc dictum.'}
+        image={EnergyPerson}
+        isImageRight={false}
+        featuresWithIcon={[
+          {
+            icon: IconImage1, // path to your icon image
+            title: "Reduce Your Daily Energy Use",
+            text:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          {
+            icon: IconImage2, // path to your icon image
+            title: "The Most Used Energy Systems",
+            text:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+        ]}
+        learn={{
+          buttonLabel: "Learn More",
+          buttonURL: "/about",
+        }}
+      />
       <div className="home-second-sec-intro">
         <SectionIntro title={"Our Services"} text={"WHAT WE DO"} />
       </div>
