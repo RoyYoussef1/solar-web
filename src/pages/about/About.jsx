@@ -2,7 +2,6 @@ import React from "react";
 import Banner from "../../components/banner/Banner";
 
 import BannerImage from "../../assets/about-banner.jpg";
-import Accordion from "../../components/accordion/Accordion";
 
 const About = () => {
 
