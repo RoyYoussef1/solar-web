@@ -12,6 +12,7 @@ import Contact from "../../pages/contact/Contact";
 import Projects from "../../pages/projects/Projects";
 import Button from "../button/Button";
 import Services from "../../pages/services/Services";
+import FAQs from "../../pages/faq/FAQs";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -80,7 +81,7 @@ const Navigation = () => {
                   to="/services"
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
                 >
-                  Services
+                  FAQs
                 </NavLink>
               </li>
             </div>
@@ -136,7 +137,7 @@ const Navigation = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<FAQs />} />
       </Routes>
     </BrowserRouter>
   );
