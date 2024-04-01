@@ -10,9 +10,8 @@ import Home from "../../pages/home/Home";
 import About from "../../pages/about/About";
 import Contact from "../../pages/contact/Contact";
 import Projects from "../../pages/projects/Projects";
-import Services from "../../pages/services/Services";
-import FAQs from "../../pages/faq/FAQs";
 import Button from "../button/Button";
+import Services from "../../pages/services/Services";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -76,14 +75,6 @@ const Navigation = () => {
                   Services
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/faqs"
-                  className={({ isActive }) => (isActive ? "active-nav" : "")}
-                >
-                  FAQs
-                </NavLink>
-              </li>
             </div>
             <Button buttonLabel={"Get a Quote"} buttonURL={"/contact"}></Button>
           </div>
@@ -130,14 +121,6 @@ const Navigation = () => {
             Services
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/faqs"
-            className={({ isActive }) => (isActive ? "active-nav" : "")}
-          >
-            FAQs
-          </NavLink>
-        </li>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -145,7 +128,6 @@ const Navigation = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/faqs" element={<FAQs />} />
       </Routes>
     </BrowserRouter>
   );

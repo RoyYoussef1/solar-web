@@ -1,0 +1,91 @@
+.question-wrapper {
+    border-bottom: 1px solid #1a1819;
+    overflow: hidden;
+}
+.question-wrapper .question-container {
+    width: 100%;
+    text-align: left;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.question-container.active-faq{
+    color: #f6a235;
+}
+.active-title{
+    color: #f6a235 !important;
+}
+.question-wrapper .arrow {
+    font-size: 2rem;
+    transition: .5s ease-in-out;
+}
+.arrow.active-faq {
+    rotate: 180deg;
+    color: #f6a235;
+}
+.question-wrapper .answer-container {
+    padding: 0 25px;
+    transition: height .5s ease-in-out;
+}
+.question-wrapper .answer-content {
+    padding-bottom: 15px;
+    color: #1a1819;
+    font-size: 16px;
+    font-style: italic;
+}
+.questions-section{
+    background-image: url('../../assets/background-faq.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    background-color: #FAF5EF;
+}
+.questions-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 25px 70px;
+}
+.question-content{
+    color: #1a1819;
+}
+@media screen and (max-width: 768px) {
+    .question-wrapper .answer-container {
+        padding: 0 15px;
+    }
+    .question-wrapper .question-container {
+        padding: 15px 5px;
+        font-size: 18px;
+    }
+    .questions-wrapper {
+        padding: 45px 25px 65px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .question-wrapper .question-container {
+        font-size: 16px;
+    }
+    .question-wrapper .answer-content {
+        font-size: 14px;
+        font-style: italic;
+    }
+    .question-wrapper .answer-container {
+        padding: 0 15px;
+    }
+    .questions-wrapper {
+        padding: 50px 15px 70px;
+    }
+    .question-content {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .question-content {
+        max-width: 290px;
+    }
+}
