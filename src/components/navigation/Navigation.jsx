@@ -78,7 +78,7 @@ const Navigation = () => {
               </li>
               <li>
                 <NavLink
-                  to="/services"
+                  to="/faqs"
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
                 >
                   FAQs
@@ -130,6 +130,14 @@ const Navigation = () => {
             Services
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/faqs"
+            className={({ isActive }) => (isActive ? "active-nav" : "")}
+          >
+            FAQs
+          </NavLink>
+        </li>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -137,7 +145,7 @@ const Navigation = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/services" element={<FAQs />} />
+        <Route path="/faqs" element={<FAQs />} />
       </Routes>
     </BrowserRouter>
   );
