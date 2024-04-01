@@ -75,6 +75,14 @@ const Navigation = () => {
                   Services
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) => (isActive ? "active-nav" : "")}
+                >
+                  Services
+                </NavLink>
+              </li>
             </div>
             <Button buttonLabel={"Get a Quote"} buttonURL={"/contact"}></Button>
           </div>
