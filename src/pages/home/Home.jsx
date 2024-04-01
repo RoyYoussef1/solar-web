@@ -23,6 +23,7 @@ import EnergyPerson from "../../assets/electrician-installing-solar-panels.jpg";
 import IconImage1 from "../../assets/icon-1-1.png";
 import IconImage2 from "../../assets/icon-2-1.png";
 import CityBuilding from "../../assets/city-building.jpg";
+import Generate from "../../components/generate/Generate";
 
 const Home = () => {
   const content = {
@@ -169,6 +170,7 @@ const Home = () => {
           }}
         />
       </div>
+      <Generate />
     </div>
   );
 };
