@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../../components/banner/Banner'
 import Accordion from '../../components/accordion/Accordion'
-import BannerImage from '../../assets/about-banner.jpg'
+import BannerImage from '../../assets/Banner2.1.png'
 
 const FAQs = () => {
   return (
