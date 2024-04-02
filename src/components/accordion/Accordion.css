@@ -26,6 +26,9 @@
     font-size: 2rem;
     transition: .5s ease-in-out;
 }
+.arrow{
+    color: #1a1819;
+}
 .arrow.active-faq {
     rotate: 180deg;
     color: #f6a235;
