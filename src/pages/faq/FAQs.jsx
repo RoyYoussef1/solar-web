@@ -7,8 +7,8 @@ const FAQs = () => {
   return (
     <div>
         <Banner
-        title={"About"}
-        teaser={"Specializing in Green Technology"}
+        title={"FAQs"}
+        teaser={"Helping you save energy and keep the lights on"}
         image={BannerImage}
       />
       <Accordion />
