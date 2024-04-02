@@ -76,13 +76,13 @@
     position: absolute;
 }
 .burger-icon.active-nav span:after {
-    transform:rotate(90deg);
+    transform:rotate(-90deg);
 }
 .burger-icon.active-nav span {
-    transform:rotate(45deg);
+    transform:rotate(-135deg);
 }
 .burger-icon.active-nav span:before {
-    transform:translateX(900px);
+    display: none;
 }
 .mobile-menu.show {
     display: block;
