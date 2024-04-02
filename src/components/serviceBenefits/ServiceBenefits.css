@@ -1,0 +1,30 @@
+.service-benefits-wrapper {
+    padding: 30px 0;
+}
+.service-benefits {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    background: #1a1819;
+    color: #fff;
+    max-width: 750px;
+    padding: 50px 20px;
+}
+.benefits {
+    font-weight: 500;
+    position: relative;
+    padding-left: 20px;
+}
+.benefits::before {
+    background-image: url('../../assets/settings-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 14px;
+    height: 14px;
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    top: 3px;
+}
