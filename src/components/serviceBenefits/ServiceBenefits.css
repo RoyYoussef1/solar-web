@@ -28,3 +28,22 @@
     background-color: #fff;
     top: 3px;
 }
+@media screen and (max-width: 1024px) {
+    .service-benefits {
+        padding: 35px 15px;
+    }
+    .service-benefits-wrapper {
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width: 568px) {
+    .service-benefits {
+        padding: 30px 15px;
+    }
+    .benefits {
+        font-size: 14px;
+    }
+    .benefits::before {
+        top: 1px;
+    }
+}

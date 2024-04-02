@@ -7,6 +7,13 @@
     padding: 5px 0;
     max-width: 400px;
 }
+.service-menu-list li:first-child {
+    padding: 0px 0 5px 0;
+}
+.service-menu-list .active {
+    color: black !important;
+    border-color: #f6a235;
+}
 .service-menu-list li a{
     color: #828282 ;
     font-size: 16px;
@@ -21,4 +28,21 @@
 }
 .service-menu-list li a:hover{
     color: #1a1819;
+}
+
+@media screen and (max-width: 1024px) {
+    .service-menu-list li a {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .service-menu-list li a {
+        width: auto;
+        max-width: 100%;
+    }
+    .service-menu-list li {
+        width: 100%;
+        max-width: 100%;
+    }
 }

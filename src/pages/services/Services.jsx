@@ -15,12 +15,12 @@ const Services = () => {
     <div>
         <Banner image={BannerImage} title="Services" teaser="We offer a wide range of services to meet your needs"/>
         <div className="services-wrap">
-          <Service title={'Solar Technology'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage1}/>
-          <Service title={'Solar Installation'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage2}/>
-          <Service title={'Solar Equipment'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage3}/>
-          <Service title={'Battery Materials'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage4}/>
-          <Service title={'Change Controllers'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage5}/>
-          <Service title={'Grid Maintenance'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage6}/>
+          <Service title={'Solar Technology'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage1} link={'/services/solar-technology'}/>
+          <Service title={'Solar Installation'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage2} link={'/services/solar-installation'}/>
+          <Service title={'Solar Equipment'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage3} link={'/services/solar-equipment'}/>
+          <Service title={'Battery Materials'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage4} link={'/services/battery-materials'}/>
+          <Service title={'Change Controllers'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage5} link={'/services/charge-controllers'}/>
+          <Service title={'Grid Maintenance'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pul leo.'} image={ServiceImage6} link={'/services/grid-maintenance'}/>
         </div>
     </div>
   )

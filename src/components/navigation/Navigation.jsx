@@ -13,6 +13,7 @@ import Projects from "../../pages/projects/Projects";
 import Button from "../button/Button";
 import Services from "../../pages/services/Services";
 import FAQs from "../../pages/faq/FAQs";
+import ServiceLayout from "../serviceLayout/ServiceLayout";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -146,6 +147,12 @@ const Navigation = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
         <Route path="/faqs" element={<FAQs />} />
+        <Route path="/services/solar-technology" element={<ServiceLayout title={"Solar Technology"} />} />
+        <Route path="/services/solar-installation" element={<ServiceLayout title={"Solar Installation"} />} />
+        <Route path="/services/solar-equipment" element={<ServiceLayout title={"Solar Equipment"} />} />
+        <Route path="/services/battery-materials" element={<ServiceLayout title={"Battery Materials"} />} />
+        <Route path="/services/charge-controllers" element={<ServiceLayout title={"Charge Controllers"} />} />
+        <Route path="/services/grid-maintenance" element={<ServiceLayout title={"Grid Maintenance"} />} />
       </Routes>
     </BrowserRouter>
   );

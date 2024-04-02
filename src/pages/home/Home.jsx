@@ -76,16 +76,19 @@ const Home = () => {
           title={"Solar Technology"}
           text={"Test1234"}
           image={ServiceImage1}
+          link={"/services/solar-technology"}
         />
         <Service
           title={"Solar Installation"}
           text={"Test1234"}
           image={ServiceImage2}
+          link={"/services/solar-installation"}
         />
         <Service
           title={"Solar Equipment"}
           text={"Test1234"}
           image={ServiceImage3}
+          link={"/services/solar-equipment"}
         />
       </div>
       <div className="first-home-sec-intro">

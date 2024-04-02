@@ -16,8 +16,8 @@ const data = [
         answer: 'Like other renewable energy resources, solar power has many environmental and health benefits. Going solar reduces greenhouse gas emissions, which contribute to climate change, and results in fewer air pollutants like sulfur dioxide and particulate matter, which can cause health problems.',
     },
     {
-        question: 'How does solar impact my property values?',
-        answer: 'Studies have shown that homes with solar energy systems sell for more than homes without them. However, your property value will only increase if you own, rather than lease, your solar panel system. Going solar will increase your property value more than a kitchen renovation in most parts of the country. We covered everything you need to know about selling your house with solar and the most important questions to ask your real estate agent before selling your home with solar panels.',
+        question: 'How much will solar panel maintenance cost?',
+        answer: `Solar panel systems are made of durable tempered glass and require little to no maintenance for the 25 to 35 years that they will generate power. In most cases, you don't even need to clean your solar panels regularly. If something does happen, most equipment manufacturers include warranties, although warranty terms depend on the company.`,
     },
     {
         question: 'How do solar panels work for my home?',
