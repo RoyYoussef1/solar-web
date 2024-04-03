@@ -57,6 +57,7 @@ p{
 .feature-learn {
     padding-top: 40px;
     display: flex;
+    align-items: center;
     gap: 60px;
 }
 .feature-grey-line{
@@ -64,6 +65,31 @@ p{
     width: 100%;
     height: 1px;
     background-color: #E5E5E5;
+}
+.call-text a{
+    color: #f6a235;
+    font-weight: 600;
+    text-decoration: none;
+}
+.call-question {
+    padding-bottom: 5px;
+}
+.call-text {
+    position: relative;
+    padding-left: 25px;
+}
+.call-text::before {
+    content: '';
+    position: absolute;
+    background-image: url('../../assets/phone-svgrepo-com.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 35px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
 }
 @media screen and (max-width: 1024px){
     .feature-section-image-wrapper{
@@ -100,11 +126,11 @@ p{
 }
 @media screen and (max-width: 520px){
     .feature-section-image-wrapper {
-        padding: 30px 30px 15px;
+        padding: 30px 15px 15px;
         width: auto;
     }
     .about-feature {
-        padding: 15px 30px;
+        padding: 15px;
         width: auto;
     }
     .feature-text h3 {
