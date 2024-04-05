@@ -9,7 +9,7 @@ const Generate = () => {
             <div className="generate-wrapper">
                 <div className="generate-container">
                     <div className="generate-title">Smartest Way to Generate Electricity</div>
-                    <Button buttonLabel={"Get in Touch"} buttonURL={"/contact"} />
+                    <Button buttonLabel={"Get in Touch"} buttonURL={"/contact"} isInverted/>
                 </div>
             </div>
         </section>

@@ -9,3 +9,11 @@
 .button-container a:hover{
     background-color: #1a1819;
 }
+.button-container.inverted a {
+    background-color: #1a1819;
+  }
+  
+  .button-container.inverted a:hover {
+    background-color: #363636;
+    color: #fff;
+  }

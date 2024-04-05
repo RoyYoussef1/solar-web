@@ -1,0 +1,17 @@
+.not-found-page {
+    padding: 100px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.not-found-page .button-container{
+    display: block !important;
+}
+.not-found-page h1, .not-found-page p{
+    padding-bottom: 10px;
+}
+.not-found-page .button-wrapper{
+    padding-top: 15px;
+}

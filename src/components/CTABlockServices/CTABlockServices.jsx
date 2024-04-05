@@ -12,7 +12,7 @@ const CTABlockServices = () => {
         <div className="cta-block-text">
           Solar Panel Installation Services At Your Door Step
         </div>
-        <Button buttonLabel="Get in Touch" buttonURL="/contact" />
+        <Button buttonLabel="Get in Touch" buttonURL="/contact" isInverted />
       </div>
     </div>
   );
