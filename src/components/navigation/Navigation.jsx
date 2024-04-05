@@ -72,6 +72,14 @@ const Navigation = () => {
               </li>
               <li>
                 <NavLink
+                  to="/equipment"
+                  className={({ isActive }) => (isActive ? "active-nav" : "")}
+                >
+                  Equipment
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/services"
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
                 >
@@ -126,6 +134,14 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink
+            to="/equipment"
+            className={({ isActive }) => (isActive ? "active-nav" : "")}
+          >
+            Equipment
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/services"
             className={({ isActive }) => (isActive ? "active-nav" : "")}
           >
@@ -149,12 +165,30 @@ const Navigation = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="*" element={<NotFoundPage />} />
-        <Route path="/services/solar-technology" element={<ServiceLayout title={"Solar Technology"} />} />
-        <Route path="/services/solar-installation" element={<ServiceLayout title={"Solar Installation"} />} />
-        <Route path="/services/solar-equipment" element={<ServiceLayout title={"Solar Equipment"} />} />
-        <Route path="/services/battery-materials" element={<ServiceLayout title={"Battery Materials"} />} />
-        <Route path="/services/charge-controllers" element={<ServiceLayout title={"Charge Controllers"} />} />
-        <Route path="/services/grid-maintenance" element={<ServiceLayout title={"Grid Maintenance"} />} />
+        <Route
+          path="/services/solar-technology"
+          element={<ServiceLayout title={"Solar Technology"} />}
+        />
+        <Route
+          path="/services/solar-installation"
+          element={<ServiceLayout title={"Solar Installation"} />}
+        />
+        <Route
+          path="/services/solar-equipment"
+          element={<ServiceLayout title={"Solar Equipment"} />}
+        />
+        <Route
+          path="/services/battery-materials"
+          element={<ServiceLayout title={"Battery Materials"} />}
+        />
+        <Route
+          path="/services/charge-controllers"
+          element={<ServiceLayout title={"Charge Controllers"} />}
+        />
+        <Route
+          path="/services/grid-maintenance"
+          element={<ServiceLayout title={"Grid Maintenance"} />}
+        />
       </Routes>
     </BrowserRouter>
   );
