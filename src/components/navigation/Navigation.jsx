@@ -18,9 +18,11 @@ import NotFoundPage from "../404/NotFoundPage";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
+
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+  
   return (
     <BrowserRouter>
       <div className="navigation-section">
@@ -103,6 +105,7 @@ const Navigation = () => {
         <li>
           <NavLink
             to="/"
+            onClick={toggleMenu}
             className={({ isActive }) => (isActive ? "active-nav" : "")}
           >
             Home
@@ -111,6 +114,7 @@ const Navigation = () => {
         <li>
           <NavLink
             to="/about"
+            onClick={toggleMenu}
             className={({ isActive }) => (isActive ? "active-nav" : "")}
           >
             About
@@ -119,6 +123,7 @@ const Navigation = () => {
         <li>
           <NavLink
             to="/contact"
+            onClick={toggleMenu}
             className={({ isActive }) => (isActive ? "active-nav" : "")}
           >
             Contact
@@ -127,6 +132,7 @@ const Navigation = () => {
         <li>
           <NavLink
             to="/projects"
+            onClick={toggleMenu}
             className={({ isActive }) => (isActive ? "active-nav" : "")}
           >
             Projects
@@ -135,6 +141,7 @@ const Navigation = () => {
         <li>
           <NavLink
             to="/equipment"
+            onClick={toggleMenu}
             className={({ isActive }) => (isActive ? "active-nav" : "")}
           >
             Equipment
@@ -143,6 +150,7 @@ const Navigation = () => {
         <li>
           <NavLink
             to="/services"
+            onClick={toggleMenu}
             className={({ isActive }) => (isActive ? "active-nav" : "")}
           >
             Services
@@ -151,6 +159,7 @@ const Navigation = () => {
         <li>
           <NavLink
             to="/faqs"
+            onClick={toggleMenu}
             className={({ isActive }) => (isActive ? "active-nav" : "")}
           >
             FAQs
