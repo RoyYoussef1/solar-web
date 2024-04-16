@@ -57,8 +57,9 @@ input[type="submit"]:hover {
     }
 }
 @media screen and (max-width: 430px) {
-    .form-group{
+    .form-group {
         width: 300px;
+        padding: 10px 0;
     }
     .form-wrapper {
         padding: 0px 0 10px;
