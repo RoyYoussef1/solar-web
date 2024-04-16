@@ -1,0 +1,66 @@
+.form-wrapper{
+    padding: 0 30px 30px;
+}
+.form-group{
+    padding: 12px 0;
+    width: 550px;
+    max-width: 550px;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #1a1819;
+    font-weight: 500;
+}
+::placeholder{
+    color: #FFF;
+    opacity: 0.8;
+    font-weight: 500;
+    font-family: Raleway, sans-serif;
+}
+textarea {
+    resize: none;
+}
+input[type="submit"] {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: transparent;
+}
+.send-group{
+    max-width: 135px;
+}
+.send-group input[type="submit"] {
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+}
+@media screen and (max-width: 1440px) {
+    .form-group{
+        padding: 12px 0;
+        width: 350px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .form-group{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .form-wrapper{
+        padding: 0px 0 30px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .form-group{
+        width: 300px;
+    }
+    .form-wrapper {
+        padding: 0px 0 10px;
+    }
+}

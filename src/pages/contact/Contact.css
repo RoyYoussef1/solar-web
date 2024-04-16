@@ -1,0 +1,51 @@
+.contact-tab-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.contact-tab-info{
+    padding: 100px 20px 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.contact-tab{
+    background-image: url('../../assets/gransolar-epc-constructor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    color: #fff;
+}
+@media screen and (max-width: 1440px) {
+    .contact-tab-wrap {
+        max-width: 1200px;
+    }
+    .contact-tab-info{
+        max-width: 1200px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .contact-tab-wrap {
+        padding: 0px 40px 50px;
+    }
+    .contact-tab-info{
+        padding: 50px 40px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact-tab-wrap {
+       flex-wrap: wrap;
+       align-items: flex-start;
+    }
+    .contact-tab-wrap {
+        padding: 0px 25px 50px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .contact-tab-info {
+        padding: 40px 25px 0;
+    }
+}
