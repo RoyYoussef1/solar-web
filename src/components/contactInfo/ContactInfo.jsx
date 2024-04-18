@@ -4,8 +4,8 @@ import "./ContactInfo.css";
 
 //Images:
 import Location from "../../assets/location.png";
-import Phone from "../../assets/phone-call.png";
-import Email from "../../assets/email.png";
+import Phone from "../../assets/phone.png";
+import Email from "../../assets/mail.png";
 
 const ContactInfo = () => {
   return (
