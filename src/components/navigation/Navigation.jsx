@@ -15,6 +15,7 @@ import Services from "../../pages/services/Services";
 import FAQs from "../../pages/faq/FAQs";
 import ServiceLayout from "../serviceLayout/ServiceLayout";
 import NotFoundPage from "../404/NotFoundPage";
+import ScrollToTopOnMount from "../ScrollToTopOnMount";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -25,6 +26,7 @@ const Navigation = () => {
   
   return (
     <BrowserRouter>
+    <ScrollToTopOnMount />
       <div className="navigation-section">
         <div className="navigation-wrapper">
           <div className="navigation-container">

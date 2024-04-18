@@ -14,3 +14,6 @@
     font-size: 40px;
     flex: 0.7;
 }
+section.generate-section {
+    padding: 40px 0 0;
+}
