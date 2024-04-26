@@ -44,16 +44,27 @@
 .work-step-container {
     padding: 0 5px;
 }
-.zabre{
+.steps-section{
     background-image: url('../../assets/work-icon/work-bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 50px 0;
 }
+.yellow-banner{
+    background-color: #f6a235;
+    padding: 40px 0;
+}
+.yellow-banner-text{
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+}
 
+/* Responsive design */
 @media screen and (max-width: 1024px){
-    .zabre{
+    .steps-section{
         padding: 40px 0;
     }
     .work-step-title{
@@ -83,7 +94,13 @@
         font-size: 22px;
     }
     .work-step-container {
-        padding: 0 5px;
+        padding: 0 5px 10px;
         width: 100%;
+    }
+    .yellow-banner{
+        padding: 30px 0;
+    }
+    .yellow-banner-text{
+        font-size: 22px;
     }
 }
