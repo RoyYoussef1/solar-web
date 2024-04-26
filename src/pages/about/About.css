@@ -1,11 +1,15 @@
 .service-v2-wrap{
     display: flex;
     gap: 30px;
-    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px 0;
     flex-wrap: wrap;
+}
+@media screen and (max-width: 1200px){
+    .service-v2-wrap{
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 768px){
     .service-v2-wrap{

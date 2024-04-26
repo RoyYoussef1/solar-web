@@ -10,6 +10,7 @@ import ServiceV2Image1 from '../../assets/serviceV2-1.jpg'
 import ServiceV2Image2 from '../../assets/serviceV2-2.jpg'
 import ServiceV2Image3 from '../../assets/serviceV2-3.jpg'
 import ServiceV2 from "../../components/services/ServiceV2";
+import TeamWork from "../../components/teamWork/TeamWork";
 
 const About = () => {
   return (
@@ -49,6 +50,7 @@ const About = () => {
           buttonURL: "/about",
         }}
       />
+      <TeamWork />
     </div>
   );
 };

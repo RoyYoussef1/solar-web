@@ -1,0 +1,89 @@
+.work-step-icon{
+    max-width: 80px;
+    padding-bottom: 30px;
+}
+.work-step-icon img{
+    width: 100%;
+    display: block;
+}
+.work-step-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.work-step-text{
+    font-size: 14px;
+    color: #A8A7A7;
+    padding-top: 15px;
+}
+.work-step-line{
+    border-top: 1px solid #f6a235;
+    width: 20px;
+}
+.step{
+    color: #A8A7A7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1em;
+}
+.work-step-index{
+    color: #f6a235;
+    font-weight: 700;
+    font-size: 26px;
+}
+.work-step-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.work-step-container {
+    padding: 0 5px;
+}
+.zabre{
+    background-image: url('../../assets/work-icon/work-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+@media screen and (max-width: 1024px){
+    .zabre{
+        padding: 40px 0;
+    }
+    .work-step-title{
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .work-step-wrapper{
+        flex-wrap: wrap;
+        padding: 20px 15px;
+    }
+    .work-step-title{
+        font-size: 16px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .work-step-text{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .work-step-line{
+        width: 15px;
+    }
+    .work-step-index{
+        font-size: 22px;
+    }
+    .work-step-container {
+        padding: 0 5px;
+        width: 100%;
+    }
+}
