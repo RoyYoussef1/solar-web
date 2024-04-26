@@ -34,7 +34,7 @@ const ContactInfo = () => {
               <img src={Email} alt="Email" />
             </div>
             <div className="info-text">
-              <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+              <a href="mailto:SSolarWeb@gmail.com">SSolarWeb@gmail.com</a>
             </div>
           </div>
         </div>

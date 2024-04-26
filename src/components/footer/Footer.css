@@ -46,6 +46,9 @@
     transition-duration: 250ms;
     transition-timing-function: ease;
 }
+.footer-contact a {
+    transition: 300ms ease-in-out;
+}
 .footer-contact .email{
     color: #fff;
     display: block;

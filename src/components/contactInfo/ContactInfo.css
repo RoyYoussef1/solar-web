@@ -18,6 +18,10 @@
 .info-text a{
     font-weight: 600;
     color: #fff;
+    transition: all 0.3s ease;
+}
+.info-text a:hover{
+    color: #f6a235;
 }
 .info-tab{
     display: flex;

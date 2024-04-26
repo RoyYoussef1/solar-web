@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className="footer-logo"><NavLink to="/"><img src={FooterLogo} alt="Logo" className="logo-icon" /></NavLink></div>
                 <div className="footer-text">We Offer a Wide Range of Quality Solar Panel Installation Services.</div>
                 <div className="footer-contact">
-                    <div className="email"><a href="mailto:needhelp@company.com">needhelp@company.com</a></div>
+                    <div className="email"><a href="mailto:SSolarWeb@gmail.com">SSolarWeb@gmail.com</a></div>
                     <div className="phone"><a href="tel:(123) 456-7890">(123) 456-7890</a></div>
                 </div>
             </div>
