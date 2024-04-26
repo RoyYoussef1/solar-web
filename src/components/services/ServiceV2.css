@@ -1,5 +1,6 @@
 .service-v2{
     max-width: 370px;
+    margin: 0 auto;
 }
 .service-v2-image img{
     width: 100%;
@@ -8,13 +9,31 @@
 .service-v2-content{
     background-color: #FAF5EF;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    padding: 30px 20px 20px;
+    padding: 30px 20px 30px;
 }
 .service-v2-title{
     font-weight: 700;
     font-size: 18px;
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 .service-v2-text{
     font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    .service-v2 {
+        max-width: 100%;
+    }
+    .service-v2-content {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 430px){
+    .service-v2-title{
+        font-size: 16px;
+    }
+    .service-v2-text{
+        font-size: 13px;
+    }
 }

@@ -2,5 +2,20 @@
     display: flex;
     gap: 30px;
     justify-content: center;
-    padding-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 0;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 768px){
+    .service-v2-wrap{
+        padding: 20px 15px 0;
+        gap: 15px;
+    }
+    .service-v2 {
+        max-width: 100%;
+    }
+    .service-v2-content {
+        padding: 20px 10px 20px;
+    }
 }

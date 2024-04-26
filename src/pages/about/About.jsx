@@ -7,6 +7,8 @@ import BannerImage from "../../assets/about-banner.jpg";
 import IconImage1 from "../../assets/icon-1-1.png";
 import IconImage2 from "../../assets/icon-2-1.png";
 import ServiceV2Image1 from '../../assets/serviceV2-1.jpg'
+import ServiceV2Image2 from '../../assets/serviceV2-2.jpg'
+import ServiceV2Image3 from '../../assets/serviceV2-3.jpg'
 import ServiceV2 from "../../components/services/ServiceV2";
 
 const About = () => {
@@ -19,8 +21,8 @@ const About = () => {
       />
       <div className="service-v2-wrap">
         <ServiceV2 image={ServiceV2Image1} title={'Renewable Source'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dolor id nunc dictum.'}/>
-        <ServiceV2 image={ServiceV2Image1} title={'Renewable Source'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dolor id nunc dictum.'}/>
-        <ServiceV2 image={ServiceV2Image1} title={'Renewable Source'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dolor id nunc dictum.'}/>
+        <ServiceV2 image={ServiceV2Image2} title={'Renewable Source'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dolor id nunc dictum.'}/>
+        <ServiceV2 image={ServiceV2Image3} title={'Renewable Source'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dolor id nunc dictum.'}/>
       </div>
       <FeatureSection
         title={"Energy Source for a Better Life"}
