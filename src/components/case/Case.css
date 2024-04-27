@@ -3,6 +3,9 @@
     height: auto;
     display: block;
 }
+.image-wrapper{
+    position: relative;
+}
 .case-section{
     width: 100%;
     position: relative;
@@ -12,7 +15,7 @@
     opacity: 1; 
     transform: translateY(0);
   }
-.case-section::before {
+.image-wrapper a::before {
     content: "";
     position: absolute;
     top: 0;

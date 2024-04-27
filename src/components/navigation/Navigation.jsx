@@ -18,6 +18,14 @@ import NotFoundPage from "../404/NotFoundPage";
 import ScrollToTopOnMount from "../ScrollToTopOnMount";
 import Equipment from "../../pages/equipment/Equipment";
 
+//Service layout images
+import ServiceLayoutImage1 from '../../assets/service-layout/service-sub-image-01.jpg'
+import ServiceLayoutImage2 from '../../assets/service-layout/service-sub-image-02.jpg'
+import ServiceLayoutImage3 from '../../assets/service-layout/service-sub-image-03.jpg'
+import ServiceLayoutImage4 from '../../assets/service-layout/service-sub-image-04.jpg'
+import ServiceLayoutImage5 from '../../assets/service-layout/service-sub-image-05.jpg'
+import ServiceLayoutImage6 from '../../assets/service-layout/service-sub-image-06.jpg'
+
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -180,27 +188,27 @@ const Navigation = () => {
         <Route path="*" element={<NotFoundPage />} />
         <Route
           path="/services/solar-technology"
-          element={<ServiceLayout title={"Solar Technology"} />}
+          element={<ServiceLayout title={"Solar Technology"} image={ServiceLayoutImage1} />}
         />
         <Route
           path="/services/solar-installation"
-          element={<ServiceLayout title={"Solar Installation"} />}
+          element={<ServiceLayout title={"Solar Installation"} image={ServiceLayoutImage2} />}
         />
         <Route
           path="/services/solar-equipment"
-          element={<ServiceLayout title={"Solar Equipment"} />}
+          element={<ServiceLayout title={"Solar Equipment"} image={ServiceLayoutImage3} />}
         />
         <Route
           path="/services/battery-materials"
-          element={<ServiceLayout title={"Battery Materials"} />}
+          element={<ServiceLayout title={"Battery Materials"} image={ServiceLayoutImage4} />}
         />
         <Route
           path="/services/charge-controllers"
-          element={<ServiceLayout title={"Charge Controllers"} />}
+          element={<ServiceLayout title={"Charge Controllers"} image={ServiceLayoutImage5} />}
         />
         <Route
           path="/services/grid-maintenance"
-          element={<ServiceLayout title={"Grid Maintenance"} />}
+          element={<ServiceLayout title={"Grid Maintenance"} image={ServiceLayoutImage6} />}
         />
       </Routes>
     </BrowserRouter>
