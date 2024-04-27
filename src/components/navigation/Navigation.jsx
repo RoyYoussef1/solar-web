@@ -16,6 +16,7 @@ import FAQs from "../../pages/faq/FAQs";
 import ServiceLayout from "../serviceLayout/ServiceLayout";
 import NotFoundPage from "../404/NotFoundPage";
 import ScrollToTopOnMount from "../ScrollToTopOnMount";
+import Equipment from "../../pages/equipment/Equipment";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -173,6 +174,7 @@ const Navigation = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/equipment" element={<Equipment />} />
         <Route path="/services" element={<Services />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="*" element={<NotFoundPage />} />
