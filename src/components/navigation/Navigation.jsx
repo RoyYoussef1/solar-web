@@ -25,6 +25,7 @@ import ServiceLayoutImage3 from '../../assets/service-layout/service-sub-image-0
 import ServiceLayoutImage4 from '../../assets/service-layout/service-sub-image-04.jpg'
 import ServiceLayoutImage5 from '../../assets/service-layout/service-sub-image-05.jpg'
 import ServiceLayoutImage6 from '../../assets/service-layout/service-sub-image-06.jpg'
+import Inverters from "../../pages/equipment/Inverters/Inverters";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -210,6 +211,9 @@ const Navigation = () => {
           path="/services/grid-maintenance"
           element={<ServiceLayout title={"Grid Maintenance"} image={ServiceLayoutImage6} />}
         />
+        {/* <Route path="/equipment/solarpanels" element={<div>Solar Panels</div>} />
+        <Route path="/equipment/batteries" element={<div>Solar Panels</div>} /> */}
+        <Route path="/equipment/inverters" element={<Inverters />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,25 @@
+.banner-gallery-wrapper{
+  padding: 15px;
+}
+
+.banner-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.banner {
+  flex: 1 1 calc(33.333% - 10px);
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.banner-gallery a {
+  color: #000;
+}
