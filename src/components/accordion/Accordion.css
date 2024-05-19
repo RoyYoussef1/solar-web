@@ -30,7 +30,7 @@
     color: #1a1819;
 }
 .arrow.active-faq {
-    rotate: 180deg;
+    rotate: 360deg;
     color: #f6a235;
 }
 .question-wrapper .answer-container {

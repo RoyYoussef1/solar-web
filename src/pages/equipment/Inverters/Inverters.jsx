@@ -22,4 +22,5 @@ const Inverters = () => {
   )
 }
 
+
 export default Inverters
