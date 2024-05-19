@@ -1,4 +1,4 @@
-.banner-gallery-wrapper{
+.banner-gallery-wrapper {
   padding: 15px;
 }
 
@@ -22,4 +22,10 @@ button {
 
 .banner-gallery a {
   color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-gallery {
+    display: block;
+  }
 }
