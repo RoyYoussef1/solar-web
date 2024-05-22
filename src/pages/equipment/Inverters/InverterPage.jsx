@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import inverters from "../../../data/inverters";
+import inverters from "../../../data/EquipmentData";
 import ImageGalleryComponent from "../../../components/ImageGalleryComponent";
 
 import "./InverterPage.css";
