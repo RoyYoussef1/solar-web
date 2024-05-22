@@ -28,19 +28,19 @@ const Form = () => {
         <form ref={form} onSubmit={sendEmail}>
           <div className="form-group">
             {/* <label>Name</label> */}
-            <input type="text" name="from_name" placeholder="Full Name"/>
+            <input type="text" name="from_name" placeholder="Full Name" required/>
           </div>
           <div className="form-group">
             {/* <label>Email</label> */}
-            <input type="email" name="from_email" placeholder="Email Address"/>
+            <input type="email" name="from_email" placeholder="Email Address" required/>
           </div>
           <div className="form-group">
             {/* <label>Phone Number</label> */}
-            <input type="number" name="from_email" placeholder="Phone Number"/>
+            <input type="tel" name="from_number"  pattern="[0-9]{10}"  placeholder="Phone Number" required/>
           </div>
           <div className="form-group">
             {/* <label>Message</label> */}
-            <textarea name="message" placeholder="Message"/>
+            <textarea name="message" placeholder="Message" required/>
           </div>
           <div className="form-group send-group">
             <input type="submit" value="Send" />
