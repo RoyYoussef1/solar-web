@@ -23,6 +23,8 @@ import ServiceLayoutImage6 from './assets/service-layout/service-sub-image-06.jp
 import Equipment from "./pages/equipment/Equipment";
 
 import "./App.css";
+import PanelsPage from "./pages/equipment/Panels/PanelsPage";
+import Panels from "./pages/equipment/Panels/Panels";
 
 function App() {
   return (
@@ -63,7 +65,9 @@ function App() {
             element={<ServiceLayout title={"Grid Maintenance"} image={ServiceLayoutImage6} />}
           />
           <Route path="/equipment/inverters" element={<Inverters />} />
+          <Route path="/equipment/panels" element={<Panels />} />
           <Route path="/inverter/:id" element={<InverterPage />} />
+          <Route path="/panels/:id" element={<PanelsPage />} />
         </Routes>
         <Footer />
       </div>

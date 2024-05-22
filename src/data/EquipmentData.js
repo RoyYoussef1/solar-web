@@ -157,4 +157,95 @@ const inverters = [
   },
 ];
 
-export default inverters;
+const solarPanels = [
+  {
+    id: 1,
+    name: "Jinko Tiger Neo 430W N-Type",
+    description:
+      "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+    images: [
+      inverter3KImage1,
+      inverter3KImage2,
+      inverter5KImage3,
+      inverter5KImage4,
+      inverter5KImage5,
+    ],
+    specifications: {
+      CellType: "N-Type Mono-crystalline",
+      MaxPower: "430W",
+      MaxVoltage: "46.81V",
+      NominalOperatingCell: "45°C",
+      CabinetSize: "1762×1134×30",
+      Weight: "21.0kg",
+      Warranty: "5 Years/10 Years",
+    },
+  },
+  {
+    id: 2,
+    name: "Jinko Tiger Neo 490W N-Type",
+    description:
+      "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+    images: [
+      inverter3KImage1,
+      inverter3KImage2,
+      inverter5KImage3,
+      inverter5KImage4,
+      inverter5KImage5,
+    ],
+    specifications: {
+      CellType: "N-Type Mono-crystalline",
+      MaxPower: "430W",
+      MaxVoltage: "46.81V",
+      NominalOperatingCell: "45°C",
+      CabinetSize: "1762×1134×30",
+      Weight: "21.0kg",
+      Warranty: "5 Years/10 Years",
+    },
+  },
+  {
+    id: 3,
+    name: "Jinko Tiger Neo 570W N-Type",
+    description:
+      "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+    images: [
+      inverter3KImage1,
+      inverter3KImage2,
+      inverter5KImage3,
+      inverter5KImage4,
+      inverter5KImage5,
+    ],
+    specifications: {
+      CellType: "N-Type Mono-crystalline",
+      MaxPower: "430W",
+      MaxVoltage: "46.81V",
+      NominalOperatingCell: "45°C",
+      CabinetSize: "1762×1134×30",
+      Weight: "21.0kg",
+      Warranty: "5 Years/10 Years",
+    },
+  },
+  {
+    id: 4,
+    name: "Jinko Tiger Neo 635W N-Type",
+    description:
+      "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+    images: [
+      inverter3KImage1,
+      inverter3KImage2,
+      inverter5KImage3,
+      inverter5KImage4,
+      inverter5KImage5,
+    ],
+    specifications: {
+      CellType: "N-Type Mono-crystalline",
+      MaxPower: "430W",
+      MaxVoltage: "46.81V",
+      NominalOperatingCell: "45°C",
+      CabinetSize: "1762×1134×30",
+      Weight: "21.0kg",
+      Warranty: "5 Years/10 Years",
+    },
+  },
+];
+//dont forget to export solarpanels
+export { inverters, solarPanels };

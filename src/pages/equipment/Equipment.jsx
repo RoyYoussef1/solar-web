@@ -18,7 +18,7 @@ const Equipment = () => {
         teaser={"Discover our wide range of equipment options."}
       />
       <div className="equipment-wrapper">
-        <Case image={solarPanel} title={"Solar Panels"} URL={'/equipment/solarpanels'} />
+        <Case image={solarPanel} title={"Solar Panels"} URL={'/equipment/panels'} />
         <Case image={batteries} title={"Batteries"} URL={'/equipment/batteries'} />
         <Case image={inverter} title={"Inverters"} URL={'/equipment/inverters'} />
       </div>

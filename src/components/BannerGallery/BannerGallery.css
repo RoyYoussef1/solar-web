@@ -9,7 +9,7 @@
 }
 
 .banner {
-  flex: 1 1 calc(33.333% - 10px);
+  flex-grow: 0;
 }
 
 button {
