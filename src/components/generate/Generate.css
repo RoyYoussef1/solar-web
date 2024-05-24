@@ -4,9 +4,10 @@
     background-color: #f6a235;
     padding: 40px 70px 40px 70px;
 }
-.generate-container{
+.generate-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .generate-title{
     color: #fff;
@@ -14,6 +15,9 @@
     font-size: 40px;
     flex: 0.7;
 }
-section.generate-section {
-    padding: 40px 0 0;
+@media screen and (max-width: 520px){
+    .generate-container{
+        display: block;
+        text-align: center;
+    }
 }

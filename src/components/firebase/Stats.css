@@ -1,0 +1,107 @@
+.statistics-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.stat{
+    color: #FFFFFF;
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 1em;
+    text-shadow: 1px 0px 4px #D8BE9E;
+}
+.statistics-cont .stat-title{
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1em;
+    padding-top: 20px;
+    text-align: center;
+    color: #1a1819;
+}
+.stats-container {
+    background-image: url('https://solam.progressionstudios.com/wp-content/uploads/2022/01/background.jpg');
+    padding: 100px 0;
+}
+.statistics-cont {
+    position: relative;
+}
+.stat-widget{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    max-width: 50px;
+}
+.stat-widget img{
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 1280px) {
+    .stat {
+        font-size: 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .stat {
+        font-size: 70px;
+    }
+    .statistics-cont .stat-title{
+        font-size: 16px;
+        line-height: 0.5em;
+        padding-top: 20px;
+    }
+    .stat-widget {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        max-width: 40px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .stat {
+        font-size: 40px;
+        text-align: center;
+    }
+    .stats-container {
+        padding: 80px 0;
+    }
+    .statistics-cont .stat-title{
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 20px;
+    }
+    .stat-widget {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        max-width: 30px;
+    }
+    .statistics-wrap {
+        padding: 0 15px;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .stat {
+        font-size: 30px;
+        text-align: center;
+    }
+    .statistics-cont .stat-title{
+        font-size: 14px;
+        line-height: 15px;
+        padding-top: 20px;
+    }
+    .stat-widget {
+        position: absolute;
+        top: -10px;
+        right: -5px;
+        max-width: 25px;
+    }
+    .statistics-wrap {
+        padding: 0 15px;
+        gap: 15px;
+    }
+}
