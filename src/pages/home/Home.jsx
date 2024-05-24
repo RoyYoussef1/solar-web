@@ -24,6 +24,7 @@ import IconImage1 from "../../assets/icon-1-1.png";
 import IconImage2 from "../../assets/icon-2-1.png";
 import CityBuilding from "../../assets/city-building.jpg";
 import Generate from "../../components/generate/Generate";
+import Button from "../../components/button/Button";
 
 const Home = () => {
   const content = {
@@ -174,6 +175,7 @@ const Home = () => {
         />
       </div>
       <Generate />
+      <Button buttonLabel={"Testimonials"} buttonURL={"/write"} />
     </div>
   );
 };
