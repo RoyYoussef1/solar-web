@@ -75,9 +75,9 @@
     }
     .stat-widget {
         position: absolute;
-        top: -10px;
-        right: -10px;
-        max-width: 30px;
+        top: -5px;
+        right: -8px;
+        max-width: 35px;
     }
     .statistics-wrap {
         display: flex;
@@ -87,17 +87,5 @@
         margin: 0 auto;
         padding: 0 15px;
         gap: 20px;
-    }
-}
-@media screen and (max-width: 420px) {
-    .stat-widget {
-        position: absolute;
-        top: -10px;
-        right: -5px;
-        max-width: 25px;
-    }
-    .statistics-wrap {
-        padding: 0 15px;
-        gap: 15px;
     }
 }
