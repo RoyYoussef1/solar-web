@@ -62,11 +62,11 @@
 }
 @media screen and (max-width: 520px) {
     .stat {
-        font-size: 40px;
+        font-size: 70px;
         text-align: center;
     }
     .stats-container {
-        padding: 80px 0;
+        padding: 60px 0;
     }
     .statistics-cont .stat-title{
         font-size: 16px;
@@ -80,20 +80,16 @@
         max-width: 30px;
     }
     .statistics-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1280px;
+        margin: 0 auto;
         padding: 0 15px;
         gap: 20px;
     }
 }
 @media screen and (max-width: 420px) {
-    .stat {
-        font-size: 30px;
-        text-align: center;
-    }
-    .statistics-cont .stat-title{
-        font-size: 14px;
-        line-height: 15px;
-        padding-top: 20px;
-    }
     .stat-widget {
         position: absolute;
         top: -10px;
