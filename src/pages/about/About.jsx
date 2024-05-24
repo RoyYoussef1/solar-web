@@ -11,6 +11,7 @@ import ServiceV2Image2 from '../../assets/serviceV2-2.jpg'
 import ServiceV2Image3 from '../../assets/serviceV2-3.jpg'
 import ServiceV2 from "../../components/services/ServiceV2";
 import TeamWork from "../../components/teamWork/TeamWork";
+import Testimonials from "../../components/firebase/Testimonials";
 
 const About = () => {
   return (
@@ -50,6 +51,7 @@ const About = () => {
           buttonURL: "/about",
         }}
       />
+      <Testimonials />
       <TeamWork />
     </div>
   );

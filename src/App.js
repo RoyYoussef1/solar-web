@@ -25,7 +25,7 @@ import Equipment from "./pages/equipment/Equipment";
 import "./App.css";
 import PanelsPage from "./pages/equipment/Panels/PanelsPage";
 import Panels from "./pages/equipment/Panels/Panels";
-import Write from "./components/Write";
+import TestimonialsData from "./components/firebase/TestimonialsData";
 
 function App() {
   return (
@@ -69,7 +69,7 @@ function App() {
           <Route path="/equipment/panels" element={<Panels />} />
           <Route path="/inverter/:id" element={<InverterPage />} />
           <Route path="/panels/:id" element={<PanelsPage />} />
-          <Route path="/write" element={<Write />} />
+          <Route path="/testi" element={<TestimonialsData />} />
         </Routes>
         <Footer />
       </div>
