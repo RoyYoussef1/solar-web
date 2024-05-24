@@ -9,7 +9,7 @@
 .service-v2-content{
     background-color: #FAF5EF;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    padding: 30px 20px 30px;
+    padding: 20px 20px 30px;
 }
 .service-v2-title{
     font-weight: 700;

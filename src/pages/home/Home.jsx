@@ -117,7 +117,7 @@ const Home = () => {
               image={HouseImage}
               type={"Installations"}
               title={"Tile & Metal Roof Installations"}
-              URL={"/services"}
+              URL={"/projects"}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -125,7 +125,7 @@ const Home = () => {
               image={AfricanGirl}
               type={"Consulting"}
               title={"Commercial Solar Inspections"}
-              URL={"/services"}
+              URL={"/projects"}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -133,7 +133,7 @@ const Home = () => {
               image={GirlImage}
               type={"Case Studies"}
               title={"Solar Research Development"}
-              URL={"/services"}
+              URL={"/projects"}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -141,7 +141,7 @@ const Home = () => {
               image={ElecImage}
               type={"Installations"}
               title={"Solar Panel Installation"}
-              URL={"/services"}
+              URL={"/projects"}
             />
           </SwiperSlide>
         </Swiper>
