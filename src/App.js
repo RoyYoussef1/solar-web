@@ -25,6 +25,7 @@ import Equipment from "./pages/equipment/Equipment";
 import "./App.css";
 import PanelsPage from "./pages/equipment/Panels/PanelsPage";
 import Panels from "./pages/equipment/Panels/Panels";
+import Write from "./components/Write";
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
           <Route path="/equipment/panels" element={<Panels />} />
           <Route path="/inverter/:id" element={<InverterPage />} />
           <Route path="/panels/:id" element={<PanelsPage />} />
+          <Route path="/write" element={<Write />} />
         </Routes>
         <Footer />
       </div>

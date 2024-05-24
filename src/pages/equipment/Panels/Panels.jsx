@@ -34,7 +34,7 @@ const Panels = () => {
   return (
     <div>
       <h1>Solar Panels</h1>
-      <BannerGallery banners={banners} />
+      <BannerGallery banners={banners} type={'panels'} />
     </div>
   );
 };

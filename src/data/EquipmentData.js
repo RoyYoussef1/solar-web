@@ -34,7 +34,7 @@ const inverters = [
     id: 2,
     name: "Hybrid Inverter SUN - 5K - SG04LP1-EU",
     description:
-      "The Hybrid Inverter SUN - 5K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+      "The Hybrid Inverter SUN - 5K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 6500W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB. This inverter provides a robust solution for managing and optimizing solar power, ensuring long-term reliability and efficiency for your energy needs.",
     images: [
       inverter3KImage1,
       inverter3KImage2,
@@ -59,7 +59,7 @@ const inverters = [
     id: 3,
     name: "Hybrid Inverter SUN - 6K - SG04LP1-EU",
     description:
-      "The Hybrid Inverter SUN - 6K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+      "The Hybrid Inverter SUN - 6K is crafted for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 7800W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design is suitable for outdoor installation, and it operates quietly with noise levels below 30 dB. This inverter offers a robust solution for managing and optimizing solar power, providing dependable and efficient energy for your home.",
     images: [
       inverter3KImage1,
       inverter3KImage2,
@@ -84,7 +84,7 @@ const inverters = [
     id: 4,
     name: "Hybrid Inverter SUN - 8K - SG01LP1-US",
     description:
-      "The Hybrid Inverter SUN - 8K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+      "The Hybrid Inverter SUN - 8K is engineered for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 10400W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, TYPE3R-rated design is suitable for outdoor installation, and it operates quietly with noise levels below 30 dB. This inverter offers a dependable solution for managing and optimizing solar power, providing efficient and consistent energy for your home.",
     images: [
       inverter3KImage1,
       inverter3KImage2,
@@ -109,7 +109,7 @@ const inverters = [
     id: 5,
     name: "Three Phase Hybrid Inverter - 10K - SG05LP3-EU-SM2",
     description:
-      "The Hybrid Inverter SUN - 10K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+      "The Three Phase Hybrid Inverter - 10K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 13000W and a wide input voltage range up to 800V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels up to 55 dB. This inverter provides a robust solution for managing and optimizing solar power, delivering efficient and consistent energy for your home.",
     images: [
       inverter3KImage1,
       inverter3KImage2,
@@ -134,7 +134,7 @@ const inverters = [
     id: 6,
     name: "Three Phase Hybrid Inverter - 12K - SG05LP3-EU-SM2",
     description:
-      "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+      "The Three Phase Hybrid Inverter - 12K is engineered for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 15600W and a wide input voltage range up to 800V, it ensures optimal energy conversion. Its compact, IP65-rated design is suitable for outdoor installation, and it operates quietly with noise levels up to 55 dB. This inverter offers a robust solution for managing and optimizing solar power, providing efficient and dependable energy for your home.",
     images: [
       inverter3KImage1,
       inverter3KImage2,
@@ -162,7 +162,7 @@ const solarPanels = [
     id: 1,
     name: "Jinko Tiger Neo 430W N-Type",
     description:
-      "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+      "The Jinko Tiger Neo 430W N-Type solar panel is designed for high efficiency and reliable performance in residential solar power systems. With a maximum power output of 430W and a maximum voltage of 46.81V, it ensures optimal energy conversion. Its N-Type Mono-crystalline cell type enhances durability and performance. The compact design with a size of 1762×1134×30mm allows for versatile installation, and it has a weight of 21.0kg. This solar panel offers a robust solution for maximizing solar power generation, backed by a warranty of 5 years for product quality and 10 years for performance assurance.",
     images: [
       inverter3KImage1,
       inverter3KImage2,

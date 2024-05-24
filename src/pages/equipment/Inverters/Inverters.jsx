@@ -17,7 +17,7 @@ const Inverters = () => {
   return (
     <div>
         <h1>Inverters</h1>
-        <BannerGallery banners={banners} />
+        <BannerGallery banners={banners} type={'inverter'} />
     </div>
   )
 }
