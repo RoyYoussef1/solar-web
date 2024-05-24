@@ -2,10 +2,15 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
 import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 import "./Stats.css";
 
 const Stats = () => {
   const [stats, setStats] = useState([]);
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once
+    threshold: 0.1, // Adjust this value if necessary
+  });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,7 +24,7 @@ const Stats = () => {
   }, []);
 
   return (
-    <div className="stats-container">
+    <div className="stats-container" ref={ref}>
       {stats.map((stat, index) => (
         <div key={index} className="statistics-wrap">
           <div className="statistics-cont">
@@ -30,7 +35,7 @@ const Stats = () => {
               />
             </div>
             <div className="stat">
-              <CountUp end={stat.Five_Stars_Reviews} duration={5} />
+              {inView && <CountUp end={stat.Five_Stars_Reviews} duration={5} />}
             </div>
             <div className="stat-title">Five Star Reviews</div>
           </div>
@@ -42,7 +47,7 @@ const Stats = () => {
               />
             </div>
             <div className="stat">
-              <CountUp end={stat.Nb_Panels_Installed} duration={5} />
+              {inView && <CountUp end={stat.Nb_Panels_Installed} duration={5} />}
             </div>
             <div className="stat-title">Panels Installed</div>
           </div>
@@ -54,7 +59,7 @@ const Stats = () => {
               />
             </div>
             <div className="stat">
-              <CountUp end={stat.Nb_Technical_Support} duration={5} />
+              {inView && <CountUp end={stat.Nb_Technical_Support} duration={5} />}
             </div>
             <div className="stat-title">Technical Support</div>
           </div>
@@ -66,7 +71,7 @@ const Stats = () => {
               />
             </div>
             <div className="stat">
-              <CountUp end={stat.Years_of_Experience} duration={5} />
+              {inView && <CountUp end={stat.Years_of_Experience} duration={5} />}
             </div>
             <div className="stat-title">Years Experience</div>
           </div>
