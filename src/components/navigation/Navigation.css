@@ -1,118 +1,195 @@
-.navigation-section{
+.navigation-section {
     background-color: #fff;
+    position: relative;
+    z-index: 1000;
 }
-.navigation-container{
+
+.navigation-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 30px;
 }
-.navigation-links{
+
+.navigation-links {
     display: flex;
     align-items: center;
     gap: 50px;
 }
-.navigation-links li{
+
+.navigation-links li {
     list-style: none;
 }
-.navigation-links li a{
+
+.navigation-links li a {
     text-decoration: none;
     color: #828282;
     font-weight: 600;
     padding-bottom: 5px;
     font-size: 15px;
-    transition-duration:250ms;
-    transition-timing-function:ease;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
 }
-.navigation-links li a:hover{
+
+.navigation-links li a:hover {
     text-decoration: none;
     color: #1a1819;
     font-weight: 600;
     border-bottom: 2px solid #f6a235;
 }
-.logo-container{
+
+.logo-container {
     max-width: 140px;
     border-right: 1px solid #E7DFD5;
     padding-right: 30px;
 }
-.logo-container img{
+
+.logo-container img {
     display: block;
     width: 100%;
 }
-.navigation-links li .active-nav{
+
+.navigation-links li .active-nav {
     color: #1a1819;
     border-bottom: 2px solid #f6a235;
 }
+
 .burger-icon {
     display: none;
     cursor: pointer;
     position: absolute;
     right: 50px;
 }
+
 .burger-icon span {
     display: block;
     width: 25px;
-    height: 3px;
+    height: 2px;
     background-color: #333;
     margin-bottom: 5px;
     transition: 300ms ease-in-out;
 }
+
 .burger-icon span:before,
 .burger-icon span:after {
     content: "";
     display: block;
     width: 25px;
-    height: 3px;
+    height: 2px;
     background-color: #333;
     margin-bottom: 5px;
     transition: 300ms ease-in-out;
 }
+
 .burger-icon span:before {
     transform: translateY(-8px);
     position: absolute;
 }
+
 .burger-icon span:after {
     transform: translateY(8px);
     position: absolute;
 }
+
 .burger-icon.active-nav span:after {
-    transform:rotate(-90deg);
+    transform: rotate(-90deg);
 }
+
 .burger-icon.active-nav span {
-    transform:rotate(-135deg);
+    transform: rotate(-135deg);
 }
+
 .burger-icon.active-nav span:before {
     display: none;
 }
-.mobile-menu.show {
-    display: block;
+
+.mobile-menu-overlay.show {
+    transform: translateX(0);
 }
+
 .mobile-menu.hide {
-    display: none;
+    transform: translateX(100%);
 }
-.mobile-menu li a{
+
+.mobile-menu-links li a {
     color: #1a1819;
+    list-style: none;
+    margin: 20px 0;
+    text-decoration: none;
 }
+
+.mobile-menu-links li{
+    padding: 8px 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.mobile-menu-links a {
+    text-decoration: none;
+    color: #1a1819;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mobile-menu .footer-social {
+    padding-top: 15px;
+}
+
+.mobile-menu-overlay {
+    position: fixed;
+    padding: 25px 10px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    /* Make sure it's above other content */
+}
+
+ul.mobile-menu-links {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 @media screen and (max-width: 1024px) {
     .burger-icon {
         display: block;
     }
+
+    .navigation-container {
+        padding: 15px 10px;
+    }
+
     .navigation-links,
     .button-container {
         display: none;
     }
+
     .navigation-links.show,
     .button-container.show {
-        display: block; 
+        display: block;
     }
 }
+
 @media screen and (max-width: 568px) {
-    .navigation-container{
-        padding: 25px 10px;
-    }
+    
+
     .burger-icon {
         right: 25px;
+        top:50%;
     }
+
     .logo-container {
         max-width: 125px;
         padding-right: 15px;

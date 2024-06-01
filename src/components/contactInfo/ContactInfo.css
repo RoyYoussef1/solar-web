@@ -49,7 +49,7 @@
     border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
-    .social-icons {
+    .contact-socials.social-icons {
         justify-content:flex-start;
     }
     .info-icon {
