@@ -4,6 +4,7 @@ import {Batteries} from "../../../data/EquipmentData";
 import ImageGalleryComponent from "../../../components/ImageGalleryComponent";
 
 import "./BatteryPage.css"
+import Button from "../../../components/button/Button";
 
 const BatteryPage = () => {
   const { id } = useParams();
@@ -69,6 +70,9 @@ const BatteryPage = () => {
               <li>Power: {inverter.specifications.power}</li>
               <li>Voltage: {inverter.specifications.voltage}</li>
             </ul> */}
+          </div>
+          <div className="inverter-page-cta">
+            <Button buttonLabel="Download Brochure" buttonURL={battery.description} />
           </div>
         </div>
       </div>

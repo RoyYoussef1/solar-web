@@ -4,6 +4,7 @@ import { solarPanels } from "../../../data/EquipmentData";
 import ImageGalleryComponent from "../../../components/ImageGalleryComponent";
 
 import "./PanelsPage.css";
+import Button from "../../../components/button/Button";
 
 const PanelsPage = () => {
   const { id } = useParams();
@@ -61,6 +62,9 @@ const PanelsPage = () => {
               <li>Power: {inverter.specifications.power}</li>
               <li>Voltage: {inverter.specifications.voltage}</li>
             </ul> */}
+          </div>
+          <div className="inverter-page-cta">
+            <Button buttonLabel="Download Brochure" buttonURL={panel.description} />
           </div>
         </div>
       </div>

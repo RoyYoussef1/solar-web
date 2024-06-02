@@ -73,6 +73,11 @@ td, th {
     transform: scale(1.1);
 }
 
+.inverter-page-cta .button-container{
+    display: block !important;
+    padding-top: 35px;
+}
+
 
 @media screen and (max-width: 1024px) {
     .inverter-page {

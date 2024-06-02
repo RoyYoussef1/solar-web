@@ -4,6 +4,7 @@ import {inverters} from "../../../data/EquipmentData";
 import ImageGalleryComponent from "../../../components/ImageGalleryComponent";
 
 import "./InverterPage.css";
+import Button from "../../../components/button/Button";
 
 const InverterPage = () => {
   const { id } = useParams();
@@ -69,6 +70,9 @@ const InverterPage = () => {
               <li>Power: {inverter.specifications.power}</li>
               <li>Voltage: {inverter.specifications.voltage}</li>
             </ul> */}
+          </div>
+          <div className="inverter-page-cta">
+            <Button buttonLabel="Download Brochure" buttonURL={inverter.description} />
           </div>
         </div>
       </div>
