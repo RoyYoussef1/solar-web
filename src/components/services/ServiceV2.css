@@ -19,6 +19,7 @@
 }
 .service-v2-text{
     font-size: 14px;
+    color: #828282;
 }
 
 @media screen and (max-width: 768px){

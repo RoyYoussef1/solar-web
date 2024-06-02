@@ -5,6 +5,7 @@ import "./Navigation.css";
 import HeaderLogo from "../../assets/logoHeader.png";
 import Button from "../button/Button";
 import SocialIcons from "../socialIcons/SocialIcons";
+import ScrollToTopOnMount from "../ScrollToTopOnMount";
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -23,6 +24,7 @@ const Navigation = () => {
 
   return (
     <>
+      <ScrollToTopOnMount />
       <div className="navigation-section">
         <div className="navigation-wrapper">
           <div className="navigation-container">
@@ -56,14 +58,6 @@ const Navigation = () => {
               </li>
               <li>
                 <NavLink
-                  to="/contact"
-                  className={({ isActive }) => (isActive ? "active-nav" : "")}
-                >
-                  Contact
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
                   to="/projects"
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
                 >
@@ -88,12 +82,20 @@ const Navigation = () => {
               </li>
               <li>
                 <NavLink
+                  to="/calculations"
+                  className={({ isActive }) => (isActive ? "active-nav" : "")}
+                >
+                  Calculations
+                </NavLink>
+              </li>
+              {/* <li>
+                <NavLink
                   to="/faqs"
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
                 >
                   FAQs
                 </NavLink>
-              </li>
+              </li> */}
             </div>
             <Button buttonLabel={"Get a Quote"} buttonURL={"/contact"}></Button>
           </div>

@@ -3,8 +3,8 @@
 }
 
 .banner-gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto;
   gap: 15px;
 }
 
@@ -26,6 +26,12 @@ button {
 
 @media screen and (max-width: 768px) {
   .banner-gallery {
-    display: block;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .banner-gallery {
+    grid-template-columns: auto;
   }
 }

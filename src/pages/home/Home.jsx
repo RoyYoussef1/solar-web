@@ -24,6 +24,7 @@ import IconImage1 from "../../assets/icon-1-1.png";
 import IconImage2 from "../../assets/icon-2-1.png";
 import CityBuilding from "../../assets/city-building.jpg";
 import Generate from "../../components/generate/Generate";
+import Button from "../../components/button/Button";
 
 const Home = () => {
   const content = {
@@ -44,23 +45,23 @@ const Home = () => {
     <div>
       <Hero {...content} />
       <FeatureSection
-        title={"Energy Source for a Better Life"}
+        title={"Sustainable Energy Solutions for Modern Living"}
         teaser={"OUR INTRODUCTION"}
         smallText={
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed deiusmod tempor incididunt ut labore et dolore magna aliqua. Donec scelerisque dolor id nunc dictum."
+          "Explore our comprehensive range of energy solutions designed to promote a greener, more sustainable lifestyle. Our cutting-edge technology is engineered to maximize efficiency and reduce ecological footprints."
         }
         image={EnergyPerson}
         isImageRight={false}
         featuresWithIcon={[
           {
-            icon: IconImage1, // path to your icon image
-            title: "Reduce Your Daily Energy Use",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            icon: IconImage1,
+            title: "Maximize Energy Efficiency",
+            text: "Optimize your energy usage with our advanced solutions, ensuring lower energy bills and a more sustainable future.",
           },
           {
-            icon: IconImage2, // path to your icon image
-            title: "The Most Used Energy Systems",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            icon: IconImage2,
+            title: "Trusted Energy Innovations",
+            text: "Experience the reliability of our top-tier energy systems, trusted by countless users for their durability and performance.",
           },
         ]}
         learn={{
@@ -71,25 +72,30 @@ const Home = () => {
       <div className="home-second-sec-intro">
         <SectionIntro title={"Our Services"} text={"WHAT WE DO"} />
       </div>
-      <div className="services-home-wrap">
-        <Service
-          title={"Solar Technology"}
-          text={"Test1234"}
-          image={ServiceImage1}
-          link={"/services/solar-technology"}
-        />
-        <Service
-          title={"Solar Installation"}
-          text={"Test1234"}
-          image={ServiceImage2}
-          link={"/services/solar-installation"}
-        />
-        <Service
-          title={"Solar Equipment"}
-          text={"Test1234"}
-          image={ServiceImage3}
-          link={"/services/solar-equipment"}
-        />
+      <div className="services-home-sec">
+        <div className="services-home-wrap">
+          <Service
+            title={"Solar Technology"}
+            text={"Stay ahead with our advanced solar technology, designed for maximum efficiency and reliability."}
+            image={ServiceImage1}
+            link={"/services/solar-technology"}
+          />
+          <Service
+            title={"Solar Installation"}
+            text={"Professional installation services to ensure your solar panels are set up for optimal performance."}
+            image={ServiceImage2}
+            link={"/services/solar-installation"}
+          />
+          <Service
+            title={"Solar Equipment"}
+            text={"High-quality solar equipment to meet all your energy needs, ensuring durability and effectiveness."}
+            image={ServiceImage3}
+            link={"/services/solar-equipment"}
+          />
+        </div>
+        <div className="view-services">
+          <Button buttonLabel="View all" buttonURL="/services" />
+        </div>
       </div>
       <div className="first-home-sec-intro">
         <SectionIntro title={"Latest Case Studies"} text={"RECENT PROJECTS"} />
@@ -151,7 +157,7 @@ const Home = () => {
           title={"Energy Source for a Better Life"}
           teaser={"OUR INTRODUCTION"}
           smallText={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed deiusmod tempor incididunt ut labore et dolore magna aliqua. Donec scelerisque dolor id nunc dictum."
+            "Discover how our innovative energy solutions can enhance your daily life and contribute to a sustainable future. We provide cutting-edge technology designed to optimize energy use and reduce environmental impact."
           }
           image={CityBuilding}
           isImageRight={true}
@@ -159,17 +165,17 @@ const Home = () => {
             {
               icon: IconImage1, // path to your icon image
               title: "Reduce Your Daily Energy Use",
-              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              text: "Cut down on energy costs with our efficient solutions designed to minimize daily consumption.",
             },
             {
               icon: IconImage2, // path to your icon image
               title: "The Most Used Energy Systems",
-              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              text: "Our systems are widely adopted, providing reliable and efficient energy for various needs.",
             },
           ]}
           learn={{
             buttonLabel: "Learn More",
-            buttonURL: "/about",
+            buttonURL: "/services",
           }}
         />
       </div>

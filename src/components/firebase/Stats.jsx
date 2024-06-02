@@ -35,7 +35,7 @@ const Stats = () => {
               />
             </div>
             <div className="stat">
-              {inView && <CountUp end={stat.Five_Stars_Reviews} duration={5} />}
+              {inView && <CountUp end={stat.Five_Stars_Reviews} duration={3} />}
             </div>
             <div className="stat-title">Five Star Reviews</div>
           </div>
@@ -47,7 +47,7 @@ const Stats = () => {
               />
             </div>
             <div className="stat">
-              {inView && <CountUp end={stat.Nb_Panels_Installed} duration={5} />}
+              {inView && <CountUp end={stat.Nb_Panels_Installed} duration={3} />}
             </div>
             <div className="stat-title">Panels Installed</div>
           </div>
@@ -59,7 +59,7 @@ const Stats = () => {
               />
             </div>
             <div className="stat">
-              {inView && <CountUp end={stat.Nb_Technical_Support} duration={5} />}
+              {inView && <CountUp end={stat.Nb_Technical_Support} duration={3} />}
             </div>
             <div className="stat-title">Technical Support</div>
           </div>
@@ -71,7 +71,7 @@ const Stats = () => {
               />
             </div>
             <div className="stat">
-              {inView && <CountUp end={stat.Years_of_Experience} duration={5} />}
+              {inView && <CountUp end={stat.Years_of_Experience} duration={3} />}
             </div>
             <div className="stat-title">Years Experience</div>
           </div>

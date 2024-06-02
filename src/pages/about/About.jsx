@@ -24,15 +24,15 @@ const About = () => {
         image={BannerImage}
       />
       <div className="service-v2-wrap">
-        <ServiceV2 image={ServiceV2Image1} title={'Renewable Source'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dolor id nunc dictum.'}/>
-        <ServiceV2 image={ServiceV2Image2} title={'Renewable Source'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dolor id nunc dictum.'}/>
-        <ServiceV2 image={ServiceV2Image3} title={'Renewable Source'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque dolor id nunc dictum.'}/>
+        <ServiceV2 image={ServiceV2Image1} title={'Renewable Source'} text={'Harness the power of renewable energy to reduce carbon footprints and promote sustainability. Embrace the future with clean and green energy solutions.'}/>
+        <ServiceV2 image={ServiceV2Image2} title={'Easy Installation'} text={'Our solar panels are designed for quick and hassle-free installation, ensuring that you can start benefiting from solar energy without any delays or complications.'}/>
+        <ServiceV2 image={ServiceV2Image3} title={'Low Maintenance'} text={'Enjoy the convenience of low maintenance solar systems. Our products are built to last, requiring minimal upkeep while providing maximum efficiency and reliability.'}/>
       </div>
       <FeatureSection
         title={"Energy Source for a Better Life"}
         teaser={"OUR INTRODUCTION"}
         smallText={
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed deiusmod tempor incididunt ut labore et dolore magna aliqua. Donec scelerisque dolor id nunc dictum."
+          "Discover how our innovative energy solutions can enhance your daily life and contribute to a sustainable future. We provide cutting-edge technology designed to optimize energy use and reduce environmental impact."
         }
         image={CityBuilding}
         isImageRight={true}
@@ -40,17 +40,17 @@ const About = () => {
           {
             icon: IconImage1, // path to your icon image
             title: "Reduce Your Daily Energy Use",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            text: "Cut down on energy costs with our efficient solutions designed to minimize daily consumption.",
           },
           {
             icon: IconImage2, // path to your icon image
             title: "The Most Used Energy Systems",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            text: "Our systems are widely adopted, providing reliable and efficient energy for various needs.",
           },
         ]}
         learn={{
           buttonLabel: "Learn More",
-          buttonURL: "/about",
+          buttonURL: "/services",
         }}
       />
       <Stats />

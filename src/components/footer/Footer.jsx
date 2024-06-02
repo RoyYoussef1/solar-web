@@ -34,16 +34,19 @@ const Footer = () => {
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/about">Leadership Team</NavLink>
-            </li>
-            <li>
               <NavLink to="/services">Services</NavLink>
             </li>
             <li>
               <NavLink to="/projects">Projects</NavLink>
             </li>
             <li>
+              <NavLink to="/equipment">Equipment</NavLink>
+            </li>
+            <li>
               <NavLink to="/contact">Contact</NavLink>
+            </li>
+            <li>
+              <NavLink to="/faqs">FAQs</NavLink>
             </li>
           </div>
         </div>
@@ -51,19 +54,22 @@ const Footer = () => {
           <div className="footer-title">Services</div>
           <div className="footer-links">
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/services/solar-technology">Solar Technology</NavLink>
             </li>
             <li>
-              <NavLink to="/about">Leadership Team</NavLink>
+              <NavLink to="/services/solar-installation">Solar Installation</NavLink>
             </li>
             <li>
-              <NavLink to="/services">Services</NavLink>
+              <NavLink to="/services/solar-equipment">Solar Equipment</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="/services/battery-materials">Battery Materials</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/services/charge-controllers">Charge Controllers</NavLink>
+            </li>
+            <li>
+              <NavLink to="/services/grid-maintenance">Grid Maintenance</NavLink>
             </li>
           </div>
         </div>
@@ -75,7 +81,9 @@ const Footer = () => {
             New York 8800 United States
           </div>
           <div className="footer-social">
-            <SocialIcons socialIcons={["facebook", "instagram", "youtube", "linkedin"]} />
+            <SocialIcons
+              socialIcons={["facebook", "instagram", "youtube", "linkedin"]}
+            />
           </div>
         </div>
       </div>

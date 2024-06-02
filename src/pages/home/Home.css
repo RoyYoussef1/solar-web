@@ -29,3 +29,7 @@
 .second-feature-section .feature-section-image-wrapper img {
     box-shadow: none;
 }
+.view-services{
+    text-align: center;
+    padding: 10px 0 30px;
+}

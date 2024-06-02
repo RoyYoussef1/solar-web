@@ -21,7 +21,7 @@ const TeamWork = () => {
               icon={icon1}
               index={1}
               title={"Meet Consultant"}
-              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+              text={"Discuss your energy needs and goals with our expert consultant to tailor the best solar solution for you."}
             />
           </div>
           <div className="work-step-container">
@@ -29,7 +29,7 @@ const TeamWork = () => {
               icon={icon2}
               index={2}
               title={"Generate Power"}
-              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+              text={"Our team installs high-efficiency solar panels to start generating clean, renewable energy."}
             />
           </div>
           <div className="work-step-container">
@@ -37,7 +37,7 @@ const TeamWork = () => {
               icon={icon3}
               index={3}
               title={"Save the Energy"}
-              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+              text={"Efficiently store the generated energy for consistent and reliable usage throughout the day."}
             />
           </div>
           <div className="work-step-container">
@@ -45,7 +45,7 @@ const TeamWork = () => {
               icon={icon4}
               index={4}
               title={"Use the Power"}
-              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+              text={"Utilize the stored solar energy to power your home or business, reducing reliance on traditional energy sources."}
             />
           </div>
         </div>
