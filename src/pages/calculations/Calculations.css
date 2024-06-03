@@ -1,0 +1,109 @@
+.calculation-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculation-section {
+    padding: 20px 15px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button{
+    cursor: pointer;
+    font-family: Raleway, sans-serif;
+    margin: 0;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input {
+    width: 97%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+button.confirmButton{
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.addButton,
+.removeButton,
+.calculateButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #1a1819;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    /* margin: 0 auto; */
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+.confirmedItem .removeButton {
+    margin: 0 20px;
+}
+.inputContainer {
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+.removeButton {
+    width: auto;
+    background-color: #f44336;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.calculateButton {
+    background-color: #f6a235;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.resultContainer {
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #e0f7fa;
+}
+
+.result {
+    margin: 0;
+}
+
+.confirmedContainer h3 {
+    padding-bottom: 12px;
+}
+
+.appliance-btn-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
