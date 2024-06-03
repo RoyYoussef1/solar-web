@@ -17,7 +17,7 @@ const Projects = () => {
       const projectsSnapshot = await getDocs(projectsCollection);
       const projectsList = projectsSnapshot.docs.map((doc) => doc.data());
       setProjects(projectsList);
-      setFilteredProjects(projectsList); // Initially show all projects
+      setFilteredProjects(projectsList);
     };
 
     fetchData();

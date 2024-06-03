@@ -1,11 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import {inverters} from "../../../data/EquipmentData";
+
 import ImageGalleryComponent from "../../../components/ImageGalleryComponent";
 
 import "./InverterPage.css";
 import Button from "../../../components/button/Button";
 
+
+import {inverters} from "../../../data/EquipmentData";
 const InverterPage = () => {
   const { id } = useParams();
   const inverter = inverters.find((inv) => inv.id === parseInt(id));

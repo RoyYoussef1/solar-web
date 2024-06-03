@@ -40,6 +40,13 @@ input[type="submit"]:hover {
     color: rgba(255,255,255,0.8);
     font-size: 14px;
 }
+p.form-message {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    background: green;
+}
 @media screen and (max-width: 1440px) {
     .form-group{
         padding: 12px 0;

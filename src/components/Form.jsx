@@ -1,22 +1,25 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Form.css";
 
 const Form = () => {
   const form = useRef();
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_wro64or", "template_jfzpyol", form.current, {
-        publicKey: "N_Y03DkjfJseq_0pG",
+      .sendForm("service_bqnabgj", "template_mmkqbbo", form.current, {
+        publicKey: "SQBgJ-BGYb3EtOVWk",
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          setMessage("Your message has been sent successfully!");
+          form.current.reset(); 
         },
         (error) => {
+          setMessage("Failed to send the message, please try again."); 
           console.log("FAILED...", error.text);
         }
       );
@@ -42,6 +45,7 @@ const Form = () => {
             <input type="submit" value="Send" />
           </div>
         </form>
+        {message && <p className="form-message">{message}</p>}
       </div>
     </div>
   );
