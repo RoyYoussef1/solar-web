@@ -97,7 +97,7 @@ const Calculations = () => {
           <CSSTransition key={input.id} timeout={500} classNames="fade">
             <div className="inputContainer">
               <label className="label">
-                Appliance {index + 1} Name:
+                Appliance Name:
                 <input
                   type="text"
                   value={input.name}
