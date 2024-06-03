@@ -8,7 +8,7 @@ import ChatBot from "../../components/ChatBot";
 
 const FAQs = () => {
   return (
-    <div>
+    <div className="faq-page">
       <Banner
         title={"FAQs"}
         teaser={"Helping you save energy and keep the lights on"}
