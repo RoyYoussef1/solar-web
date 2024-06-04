@@ -4,6 +4,31 @@ import inverter3KImage2 from "../assets/equipments/inverters/5kw-sg04 (1).webp";
 import inverter5KImage3 from "../assets/equipments/inverters/5kw-sg04 (2).webp";
 import inverter5KImage4 from "../assets/equipments/inverters/5kw-sg04 (3).webp";
 import inverter5KImage5 from "../assets/equipments/inverters/5kw-sg04 (4).webp";
+import LPUSImage1 from "../assets/equipments/inverters/sun-8k-1.webp";
+import LPUSImage2 from "../assets/equipments/inverters/sun-8k-2.webp";
+import LPUSImage3 from "../assets/equipments/inverters/sun-8k-3.webp";
+import LPUSImage4 from "../assets/equipments/inverters/sun-8k-4.webp";
+import LPUSImage5 from "../assets/equipments/inverters/sun-8k-5.webp";
+import ThreePhaseImage1 from "../assets/equipments/inverters/sun-8-12k-1.webp";
+import ThreePhaseImage2 from "../assets/equipments/inverters/sun-8-12k-2.webp";
+
+//Panel Images
+import panel430Image1 from "../assets/equipments/panels/430w-1.webp";
+import panel430Image2 from "../assets/equipments/panels/430w-2.webp";
+import panel430Image3 from "../assets/equipments/panels/430w-3.webp";
+import panel430Image4 from "../assets/equipments/panels/430w-4.webp";
+import panel490Image1 from "../assets/equipments/panels/490w-1.webp";
+import panel490Image2 from "../assets/equipments/panels/490w-2.webp";
+import panel490Image3 from "../assets/equipments/panels/490w-3.webp";
+import panel490Image4 from "../assets/equipments/panels/490w-4.webp";
+import panel570Image1 from "../assets/equipments/panels/570w-1.webp";
+import panel570Image2 from "../assets/equipments/panels/570w-2.webp";
+import panel570Image3 from "../assets/equipments/panels/570w-3.webp";
+import panel635Image1 from "../assets/equipments/panels/635w-1.webp";
+import panel635Image2 from "../assets/equipments/panels/635w-2.webp";
+import panel635Image3 from "../assets/equipments/panels/635w-3.webp";
+import panel635Image4 from "../assets/equipments/panels/635w-4.webp";
+
 
 //Battery Images
 import battery200Image1 from "../assets/equipments/batteries/200/1651037948917039105.webp";
@@ -106,11 +131,11 @@ const inverters = [
     description:
       "The Hybrid Inverter SUN - 8K is engineered for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 10400W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, TYPE3R-rated design is suitable for outdoor installation, and it operates quietly with noise levels below 30 dB. This inverter offers a dependable solution for managing and optimizing solar power, providing efficient and consistent energy for your home.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      LPUSImage1,
+      LPUSImage2,
+      LPUSImage3,
+      LPUSImage4,
+      LPUSImage5,
     ],
     specifications: {
       MaxInputPower: "10400W",
@@ -131,11 +156,8 @@ const inverters = [
     description:
       "The Three Phase Hybrid Inverter - 10K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 13000W and a wide input voltage range up to 800V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels up to 55 dB. This inverter provides a robust solution for managing and optimizing solar power, delivering efficient and consistent energy for your home.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      ThreePhaseImage1,
+      ThreePhaseImage2,
     ],
     specifications: {
       MaxInputPower: "13000W",
@@ -156,11 +178,8 @@ const inverters = [
     description:
       "The Three Phase Hybrid Inverter - 12K is engineered for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 15600W and a wide input voltage range up to 800V, it ensures optimal energy conversion. Its compact, IP65-rated design is suitable for outdoor installation, and it operates quietly with noise levels up to 55 dB. This inverter offers a robust solution for managing and optimizing solar power, providing efficient and dependable energy for your home.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      ThreePhaseImage1,
+      ThreePhaseImage2,
     ],
     specifications: {
       MaxInputPower: "15600W",
@@ -184,11 +203,10 @@ const solarPanels = [
     description:
       "The Jinko Tiger Neo 430W N-Type solar panel is designed for high efficiency and reliable performance in residential solar power systems. With a maximum power output of 430W and a maximum voltage of 46.81V, it ensures optimal energy conversion. Its N-Type Mono-crystalline cell type enhances durability and performance. The compact design with a size of 1762×1134×30mm allows for versatile installation, and it has a weight of 21.0kg. This solar panel offers a robust solution for maximizing solar power generation, backed by a warranty of 5 years for product quality and 10 years for performance assurance.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      panel430Image1,
+      panel430Image2,
+      panel430Image3,
+      panel430Image4,
     ],
     specifications: {
       CellType: "N-Type Mono-crystalline",
@@ -206,15 +224,14 @@ const solarPanels = [
     description:
       "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      panel490Image1,
+      panel490Image2,
+      panel490Image3,
+      panel490Image4,
     ],
     specifications: {
       CellType: "N-Type Mono-crystalline",
-      MaxPower: "430W",
+      MaxPower: "490W",
       MaxVoltage: "46.81V",
       NominalOperatingCell: "45°C",
       CabinetSize: "1762×1134×30",
@@ -228,15 +245,13 @@ const solarPanels = [
     description:
       "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      panel570Image1,
+      panel570Image2,
+      panel570Image3,
     ],
     specifications: {
       CellType: "N-Type Mono-crystalline",
-      MaxPower: "430W",
+      MaxPower: "570W",
       MaxVoltage: "46.81V",
       NominalOperatingCell: "45°C",
       CabinetSize: "1762×1134×30",
@@ -250,15 +265,14 @@ const solarPanels = [
     description:
       "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      panel635Image1,
+      panel635Image2,
+      panel635Image3,
+      panel635Image4,
     ],
     specifications: {
       CellType: "N-Type Mono-crystalline",
-      MaxPower: "430W",
+      MaxPower: "635W",
       MaxVoltage: "46.81V",
       NominalOperatingCell: "45°C",
       CabinetSize: "1762×1134×30",

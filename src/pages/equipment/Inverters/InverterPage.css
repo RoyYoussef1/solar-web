@@ -78,6 +78,10 @@ td, th {
     padding-top: 35px;
 }
 
+.inv-ban-wrap{
+    padding-bottom: 20px;
+}
+
 
 @media screen and (max-width: 1024px) {
     .inverter-page {
