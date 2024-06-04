@@ -40,9 +40,9 @@ const BannerGallery = ({ banners, type }) => {
         ))}
       </div>
       {showMore && visibleCount < banners.length && (
-        <button onClick={handleShowMore}>Show More</button>
+        <button onClick={handleShowMore} className="showmoreless-btn">Show More</button>
       )}
-      {!showMore && <button onClick={handleShowLess}>Show Less</button>}
+      {!showMore && <button onClick={handleShowLess} className="showmoreless-btn">Show Less</button>}
     </div>
   );
 };

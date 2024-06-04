@@ -160,6 +160,14 @@ const Navigation = () => {
             </li>
             <li>
               <NavLink
+                to="/calculations"
+                className={({ isActive }) => (isActive ? "active-nav" : "")}
+              >
+                Calculations
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/faqs"
                 onClick={toggleMenu}
                 className={({ isActive }) => (isActive ? "active-nav" : "")}
@@ -169,7 +177,9 @@ const Navigation = () => {
             </li>
           </ul>
           <div className="footer-social">
-            <SocialIcons socialIcons={["facebook", "instagram", "youtube", "linkedin"]} />
+            <SocialIcons
+              socialIcons={["facebook", "instagram", "youtube", "linkedin"]}
+            />
           </div>
         </div>
       </div>

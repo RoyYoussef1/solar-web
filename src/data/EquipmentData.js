@@ -1,8 +1,28 @@
+//Inverter Images
 import inverter3KImage1 from "../assets/equipments/inverters/5kw-sg04.webp";
 import inverter3KImage2 from "../assets/equipments/inverters/5kw-sg04 (1).webp";
 import inverter5KImage3 from "../assets/equipments/inverters/5kw-sg04 (2).webp";
 import inverter5KImage4 from "../assets/equipments/inverters/5kw-sg04 (3).webp";
 import inverter5KImage5 from "../assets/equipments/inverters/5kw-sg04 (4).webp";
+
+//Battery Images
+import battery200Image1 from "../assets/equipments/batteries/200/1651037948917039105.webp";
+import battery200Image2 from "../assets/equipments/batteries/200/1651037948917039106.webp";
+import battery200Image3 from "../assets/equipments/batteries/200/1651037948917039107.webp";
+import battery200Image4 from "../assets/equipments/batteries/200/1651037948917039108.webp";
+import battery200Image5 from "../assets/equipments/batteries/200/1651037948917039109.webp";
+import battery250Image1 from "../assets/equipments/batteries/250-300/1-8a90.webp";
+import battery250Image2 from "../assets/equipments/batteries/250-300/3-f121.webp";
+import battery250Image3 from "../assets/equipments/batteries/250-300/4-6b47.webp";
+import battery250Image4 from "../assets/equipments/batteries/250-300/5-4257.webp";
+import battery350Image1 from "../assets/equipments/batteries/350/1-b74c.webp";
+import battery350Image2 from "../assets/equipments/batteries/350/3-05a0.webp";
+import battery350Image3 from "../assets/equipments/batteries/350/4-bed8.webp";
+import battery350Image4 from "../assets/equipments/batteries/350/6-9653.webp";
+import battery24100Image1 from "../assets/equipments/batteries/24100/1-a1ed.webp";
+import battery24100Image2 from "../assets/equipments/batteries/24100/2-adf3.webp";
+import battery24100Image3 from "../assets/equipments/batteries/24100/4-0179.webp";
+import battery24100Image4 from "../assets/equipments/batteries/24100/6-5f33.webp";
 
 const inverters = [
   {
@@ -251,90 +271,113 @@ const solarPanels = [
 const Batteries = [
   {
     id: 1,
-    name: "Battery 1",
+    name: "LPBA48200",
     description:
-      "The Jinko Tiger Neo 430W N-Type solar panel is designed for high efficiency and reliable performance in residential solar power systems. With a maximum power output of 430W and a maximum voltage of 46.81V, it ensures optimal energy conversion. Its N-Type Mono-crystalline cell type enhances durability and performance. The compact design with a size of 1762×1134×30mm allows for versatile installation, and it has a weight of 21.0kg. This solar panel offers a robust solution for maximizing solar power generation, backed by a warranty of 5 years for product quality and 10 years for performance assurance.",
+      "The LPBA48200 is a high-performance lithium-ion battery designed for residential and commercial solar power systems. With a maximum input power of 5.12kWh and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB. This battery provides a reliable solution for storing and managing solar power, ensuring long-term efficiency and performance for your energy needs.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      battery200Image4,
+      battery200Image1,
+      battery200Image2,
+      battery200Image3,
+      battery200Image5,
     ],
     specifications: {
-      CellType: "N-Type Mono-crystalline",
-      MaxPower: "430W",
-      MaxVoltage: "46.81V",
-      NominalOperatingCell: "45°C",
-      CabinetSize: "1762×1134×30",
-      Weight: "21.0kg",
-      Warranty: "5 Years/10 Years",
+      Capacity: "10KWH",
+      MaxPower: "7500W",
+      NominalVoltage: "51.2V",
+      CycleLife: "6000 @25°C, 80% DOD",
+      TemperatureRange: "Discharge: -20°C to 65°C, Charge: 0°C to 55°C",
+      Dimension: "755×600×160MM",
+      Weight: "74kg",
+      Warranty: "7 Years",
     },
   },
   {
     id: 2,
-    name: "Jinko Tiger Neo 490W N-Type",
+    name: "LPBA48250",
     description:
-      "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+      "The LPBA48250 is a high-performance lithium-ion battery designed for residential and commercial solar power systems. With a maximum input power of 5.12kWh and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB. This battery provides a reliable solution for storing and managing solar power, ensuring long-term efficiency and performance for your energy needs.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      battery250Image1,
+      battery250Image2,
+      battery250Image3,
+      battery250Image4,
     ],
     specifications: {
-      CellType: "N-Type Mono-crystalline",
-      MaxPower: "430W",
-      MaxVoltage: "46.81V",
-      NominalOperatingCell: "45°C",
-      CabinetSize: "1762×1134×30",
-      Weight: "21.0kg",
-      Warranty: "5 Years/10 Years",
+      Capacity: "12.5KWH",
+      MaxPower: "10000W",
+      NominalVoltage: "51.2V",
+      CycleLife: "6000 @25°C, 80% DOD",
+      TemperatureRange: "Discharge: -20°C to 65°C, Charge: 0°C to 55°C",
+      Dimension: "721.5×350×770MM",
+      Weight: "117kg",
+      Warranty: "7 Years",
     },
   },
   {
     id: 3,
-    name: "Jinko Tiger Neo 570W N-Type",
+    name: "LPBA48300",
     description:
-      "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+      "The LPBA48300 is a high-performance lithium-ion battery designed for residential and commercial solar power systems. With a maximum input power of 5.12kWh and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB. This battery provides a reliable solution for storing and managing solar power, ensuring long-term efficiency and performance for your energy needs.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      battery250Image1,
+      battery250Image2,
+      battery250Image3,
+      battery250Image4,
     ],
     specifications: {
-      CellType: "N-Type Mono-crystalline",
-      MaxPower: "430W",
-      MaxVoltage: "46.81V",
-      NominalOperatingCell: "45°C",
-      CabinetSize: "1762×1134×30",
-      Weight: "21.0kg",
-      Warranty: "5 Years/10 Years",
+      Capacity: "15KWH",
+      MaxPower: "10000W",
+      NominalVoltage: "51.2V",
+      CycleLife: "6000 @25°C, 80% DOD",
+      TemperatureRange: "Discharge: -20°C to 65°C, Charge: 0°C to 55°C",
+      Dimension: "615×350×955MM",
+      Weight: "154kg",
+      Warranty: "5 Years",
     },
   },
   {
     id: 4,
-    name: "Jinko Tiger Neo 635W N-Type",
+    name: "LPBA48350",
     description:
-      "The Hybrid Inverter SUN - 12K is designed for high efficiency and reliable performance in residential solar power systems. With a maximum input power of 3900W and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB.",
+      "The LPBA48350 is a high-performance lithium-ion battery designed for residential and commercial solar power systems. With a maximum input power of 5.12kWh and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB. This battery provides a reliable solution for storing and managing solar power, ensuring long-term efficiency and performance for your energy needs.",
     images: [
-      inverter3KImage1,
-      inverter3KImage2,
-      inverter5KImage3,
-      inverter5KImage4,
-      inverter5KImage5,
+      battery350Image1,
+      battery350Image2,
+      battery350Image3,
+      battery350Image4,
     ],
     specifications: {
-      CellType: "N-Type Mono-crystalline",
-      MaxPower: "430W",
-      MaxVoltage: "46.81V",
-      NominalOperatingCell: "45°C",
-      CabinetSize: "1762×1134×30",
-      Weight: "21.0kg",
-      Warranty: "5 Years/10 Years",
+      Capacity: "17.5KWH",
+      MaxPower: "12500W",
+      NominalVoltage: "51.2V",
+      CycleLife: "6000 @25°C, 80% DOD",
+      TemperatureRange: "Discharge: -20°C to 65°C, Charge: 0°C to 55°C",
+      Dimension: "622×350×955MM",
+      Weight: "162kg",
+      Warranty: "5 Years",
+    },
+  },
+  {
+    id: 5,
+    name: "LPBF24100",
+    description:
+      "The LPBF24100 is a high-performance lithium-ion battery designed for residential and commercial solar power systems. With a maximum input power of 5.12kWh and a wide input voltage range up to 500V, it ensures optimal energy conversion. Its compact, IP65-rated design allows for outdoor installation, and it operates quietly with noise levels below 30 dB. This battery provides a reliable solution for storing and managing solar power, ensuring long-term efficiency and performance for your energy needs.",
+    images: [
+      battery24100Image1,
+      battery24100Image2,
+      battery24100Image3,
+      battery24100Image4,
+    ],
+    specifications: {
+      Capacity: "2.5KWH",
+      MaxPower: "2750W",
+      NominalVoltage: "25.6V",
+      CycleLife: "6000 @25°C, 80% DOD",
+      TemperatureRange: "Discharge: -20°C to 65°C, Charge: 0°C to 55°C",
+      Dimension: "345×430×195MM",
+      Weight: "22kg",
+      Warranty: "5 Years",
     },
   },
 ];

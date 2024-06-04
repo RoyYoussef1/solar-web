@@ -30,35 +30,31 @@ const BatteryPage = () => {
               <tbody>
                 <tr>
                   <th>Max Input Power:</th>
-                  <td>{battery.specifications.MaxInputPower}</td>
+                  <td>{battery.specifications.MaxPower}</td>
                 </tr>
                 <tr>
-                  <th>Max Input Voltage:</th>
-                  <td>{battery.specifications.MaxInputVoltage}</td>
+                  <th>Nominal Voltage:</th>
+                  <td>{battery.specifications.NominalVoltage}</td>
                 </tr>
                 <tr>
-                  <th>Max AC Input/Output Apparent Power:</th>
-                  <td>{battery.specifications.MaxACInputOutputApparentPower}</td>
+                  <th>Capacity:</th>
+                  <td>{battery.specifications.Capacity}</td>
                 </tr>
                 <tr>
-                  <th>Noise:</th>
-                  <td>{battery.specifications.Noise}</td>
+                  <th>Cycle Life:</th>
+                  <td>{battery.specifications.CycleLife}</td>
                 </tr>
                 <tr>
-                  <th>IP Rating:</th>
-                  <td>{battery.specifications.IPRating}</td>
+                  <th>Temperature Range:</th>
+                  <td>{battery.specifications.TemperatureRange}</td>
                 </tr>
                 <tr>
-                  <th>Cabinet Size:</th>
-                  <td>{battery.specifications.CabinetSize}</td>
+                  <th>Dimension:</th>
+                  <td>{battery.specifications.Dimension}</td>
                 </tr>
                 <tr>
                   <th>Weight:</th>
                   <td>{battery.specifications.Weight}</td>
-                </tr>
-                <tr>
-                  <th>Type of Cooling:</th>
-                  <td>{battery.specifications.TypeCooling}</td>
                 </tr>
                 <tr>
                   <th>Warranty:</th>
@@ -66,10 +62,6 @@ const BatteryPage = () => {
                 </tr>
               </tbody>
             </table>
-            {/* <ul>
-              <li>Power: {inverter.specifications.power}</li>
-              <li>Voltage: {inverter.specifications.voltage}</li>
-            </ul> */}
           </div>
           <div className="inverter-page-cta">
             <Button buttonLabel="Download Brochure" buttonURL={battery.description} />
