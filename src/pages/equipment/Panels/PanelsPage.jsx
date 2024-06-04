@@ -64,7 +64,7 @@ const PanelsPage = () => {
             </ul> */}
           </div>
           <div className="inverter-page-cta">
-            <Button buttonLabel="Download Brochure" buttonURL={panel.description} />
+            <Button buttonLabel="Download Brochure" buttonURL={panel.URL} />
           </div>
         </div>
       </div>

@@ -29,7 +29,6 @@ import panel635Image2 from "../assets/equipments/panels/635w-2.webp";
 import panel635Image3 from "../assets/equipments/panels/635w-3.webp";
 import panel635Image4 from "../assets/equipments/panels/635w-4.webp";
 
-
 //Battery Images
 import battery200Image1 from "../assets/equipments/batteries/200/1651037948917039105.webp";
 import battery200Image2 from "../assets/equipments/batteries/200/1651037948917039106.webp";
@@ -48,6 +47,8 @@ import battery24100Image1 from "../assets/equipments/batteries/24100/1-a1ed.webp
 import battery24100Image2 from "../assets/equipments/batteries/24100/2-adf3.webp";
 import battery24100Image3 from "../assets/equipments/batteries/24100/4-0179.webp";
 import battery24100Image4 from "../assets/equipments/batteries/24100/6-5f33.webp";
+
+
 
 const inverters = [
   {
