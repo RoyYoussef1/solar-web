@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
+
 import Banner from "../../components/banner/Banner";
 import BannerImage from "../../assets/Banner1.png";
-
 import "./Projects.css";
 
 const Projects = () => {

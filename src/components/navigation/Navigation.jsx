@@ -88,14 +88,14 @@ const Navigation = () => {
                   Calculations
                 </NavLink>
               </li>
-              {/* <li>
+              <li>
                 <NavLink
                   to="/faqs"
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
                 >
                   FAQs
                 </NavLink>
-              </li> */}
+              </li>
             </div>
             <Button buttonLabel={"Get a Quote"} buttonURL={"/contact"}></Button>
           </div>
