@@ -161,6 +161,7 @@ const Navigation = () => {
             <li>
               <NavLink
                 to="/calculations"
+                onClick={toggleMenu}
                 className={({ isActive }) => (isActive ? "active-nav" : "")}
               >
                 Calculations
