@@ -18,3 +18,29 @@ a{
 input, textarea{
   font-family: Raleway, sans-serif;
 }
+/* ---------- Shared buttons ---------- */
+.site-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 28px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-family: Raleway, sans-serif;
+}
+.site-btn svg { transition: transform 0.3s ease; }
+.site-btn:hover svg { transform: translateX(4px); }
+.site-btn-primary { background: #f6a235; color: #fff; }
+.site-btn-primary:hover { background: #1a1819; color: #fff; }
+.site-btn-ghost { border: 2px solid rgba(255, 255, 255, 0.6); color: #fff; padding: 14px 26px; }
+.site-btn-ghost:hover { background: #fff; color: #1a1819; border-color: #fff; }
+.site-btn-dark { background: #1a1819; color: #fff; }
+.site-btn-dark:hover { background: #f6a235; color: #fff; }
+.on-dark .site-btn-primary:hover { background: #fff; color: #1a1819; }
+@media screen and (max-width: 600px) {
+  .site-btn { padding: 14px 22px; }
+  .site-btn-ghost { padding: 12px 20px; }
+}

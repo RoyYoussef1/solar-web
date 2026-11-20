@@ -1,82 +1,58 @@
-import React, { useEffect, useState } from "react";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../firebaseConfig";
+import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import "./Stats.css";
 
+const stats = [
+  {
+    value: 320,
+    suffix: "+",
+    title: "Five Star Reviews",
+    icon: "https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-4.png",
+  },
+  {
+    value: 4800,
+    suffix: "+",
+    title: "Panels Installed",
+    icon: "https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-1.png",
+  },
+  {
+    value: 24,
+    suffix: "/7",
+    title: "Technical Support",
+    icon: "https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-2.png",
+  },
+  {
+    value: 12,
+    suffix: "",
+    title: "Years Experience",
+    icon: "https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-3.png",
+  },
+];
+
 const Stats = () => {
-  const [stats, setStats] = useState([]);
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.1, // Adjust this value if necessary
-  });
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const StatisticsCollection = collection(db, "Statistics");
-      const StatisticsSnapshot = await getDocs(StatisticsCollection);
-      const StatisticsList = StatisticsSnapshot.docs.map((doc) => doc.data());
-      setStats(StatisticsList);
-    };
-
-    fetchData();
-  }, []);
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <div className="stats-container" ref={ref}>
-      {stats.map((stat, index) => (
-        <div key={index} className="statistics-wrap">
-          <div className="statistics-cont">
+      <div className="statistics-wrap">
+        {stats.map((stat) => (
+          <div key={stat.title} className="statistics-cont">
             <div className="stat-widget">
-              <img
-                src="https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-4.png"
-                alt="5-star-widget"
-              />
+              <img src={stat.icon} alt="" />
             </div>
             <div className="stat">
-              {inView && <CountUp end={stat.Five_Stars_Reviews} duration={3} />}
+              {inView ? (
+                <CountUp end={stat.value} duration={3} separator="," />
+              ) : (
+                0
+              )}
+              {stat.suffix && <span className="stat-suffix">{stat.suffix}</span>}
             </div>
-            <div className="stat-title">Five Star Reviews</div>
+            <div className="stat-title">{stat.title}</div>
           </div>
-          <div className="statistics-cont">
-            <div className="stat-widget">
-              <img
-                src="https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-1.png"
-                alt="5-star-widget"
-              />
-            </div>
-            <div className="stat">
-              {inView && <CountUp end={stat.Nb_Panels_Installed} duration={3} />}
-            </div>
-            <div className="stat-title">Panels Installed</div>
-          </div>
-          <div className="statistics-cont">
-            <div className="stat-widget">
-              <img
-                src="https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-2.png"
-                alt="5-star-widget"
-              />
-            </div>
-            <div className="stat">
-              {inView && <CountUp end={stat.Nb_Technical_Support} duration={3} />}
-            </div>
-            <div className="stat-title">Technical Support</div>
-          </div>
-          <div className="statistics-cont">
-            <div className="stat-widget">
-              <img
-                src="https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-3.png"
-                alt="5-star-widget"
-              />
-            </div>
-            <div className="stat">
-              {inView && <CountUp end={stat.Years_of_Experience} duration={3} />}
-            </div>
-            <div className="stat-title">Years Experience</div>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

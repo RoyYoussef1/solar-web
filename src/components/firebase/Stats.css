@@ -89,3 +89,12 @@
         gap: 20px;
     }
 }
+.stat-suffix {
+    font-size: 0.5em;
+    vertical-align: top;
+    margin-left: 4px;
+}
+.statistics-wrap { gap: 20px; }
+.stat { font-size: 90px; text-align: center; }
+@media screen and (max-width: 1280px) { .stat { font-size: 76px; } }
+@media screen and (max-width: 768px) { .stat { font-size: 54px; } .statistics-wrap { flex-wrap: wrap; justify-content: space-around; row-gap: 40px; } }

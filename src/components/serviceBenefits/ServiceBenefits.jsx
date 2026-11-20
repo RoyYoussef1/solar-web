@@ -1,18 +1,23 @@
 import React from "react";
 import "./ServiceBenefits.css";
 
-const ServiceBenefits = ({ benefits }) => {
+const ServiceBenefits = ({ features }) => {
   return (
-    <div>
-      <div className="service-benefits-wrapper">
-        <div className="service-benefits">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="benefits">
-              {benefit}
+    <div className="service-benefits">
+      {features.map((f) => {
+        const Icon = f.icon;
+        return (
+          <div key={f.title} className="benefit">
+            <span className="benefit-icon">
+              <Icon />
+            </span>
+            <div>
+              <h4>{f.title}</h4>
+              <p>{f.text}</p>
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
+        );
+      })}
     </div>
   );
 };

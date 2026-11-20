@@ -1,35 +1,260 @@
-.services-home-wrap {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    padding-bottom: 30px;
-    flex-wrap: wrap;
+.home-section-head {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 45px;
 }
-.home-cases{
-    display: flex;
-    justify-content: center;
+.home-section-head p {
+    color: #666;
+    line-height: 1.7;
 }
-.swiper-button-prev, .swiper-button-next{
+
+/* ---------- Hero ---------- */
+.home-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    padding: 110px 20px 150px;
+}
+.home-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(95deg, rgba(20, 18, 19, 0.88) 0%, rgba(20, 18, 19, 0.65) 50%, rgba(20, 18, 19, 0.25) 100%);
+}
+.home-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+}
+.home-hero-content {
+    max-width: 700px;
+    color: #fff;
+}
+.home-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(246, 162, 53, 0.15);
+    border: 1px solid rgba(246, 162, 53, 0.5);
+    color: #f6a235;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+.home-hero h1 {
+    font-size: 62px;
+    line-height: 1.08;
+    font-weight: 800;
+    margin: 24px 0 22px;
+}
+.home-hero h1 span {
+    display: block;
     color: #f6a235;
 }
-.swiper-pagination-bullet-active{
-    background: #f6a235 !important;
+.home-hero-content > p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 580px;
 }
-.swiper-pagination-bullet{
-    opacity: 1;
-    background-color: #1a1819;
+.home-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 36px 0 40px;
 }
-.first-home-sec-intro{
+.home-hero-trust {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+}
+.home-hero-trust strong { color: #fff; font-size: 18px; }
+.home-hero-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.home-hero-rating .stars {
+    display: inline-flex;
+    gap: 2px;
+    color: #f6a235;
+}
+.home-hero-divider {
+    width: 1px;
+    height: 26px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.home-hero-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 320px;
+    color: #fff;
+    flex-shrink: 0;
+}
+.home-hero-card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f6a235;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.home-hero-card h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.home-hero-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.78);
+    padding-bottom: 18px;
+}
+.home-hero-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #f6a235;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* ---------- Services ---------- */
+.home-services {
+    background: #faf5ef;
+    padding: 70px 20px 90px;
+}
+/* ---------- Equipment ---------- */
+.home-equipment {
+    padding: 90px 20px;
+}
+.home-equipment-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    gap: 60px;
+    align-items: center;
+}
+.home-equipment-text .section-intro-wrap {
+    justify-content: flex-start;
+    padding-top: 0;
+}
+.home-equipment-text p {
+    color: #666;
+    line-height: 1.75;
+    padding-bottom: 30px;
+}
+.home-equipment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.home-equipment-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 14px 24px 14px 14px;
+    background: #fff;
+    color: #1a1819;
+    border: 1px solid #eee6dc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.home-equipment-item:hover {
+    border-color: #f6a235;
+    box-shadow: 0 12px 30px rgba(26, 24, 25, 0.08);
+    transform: translateX(6px);
+}
+.home-equipment-item img {
+    width: 120px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+.home-equipment-item div { flex: 1; }
+.home-equipment-item h4 {
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+.home-equipment-item p {
+    color: #777;
+    font-size: 14px;
+}
+.home-equipment-arrow {
+    font-size: 22px;
+    color: #f6a235;
+    flex-shrink: 0;
+}
+
+/* ---------- Case studies ---------- */
+.first-home-sec-intro {
     background-color: #FAF5EF;
     text-align: center;
 }
-.home-second-sec-intro{
-    text-align: center;
+.home-cases {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
 }
-.second-feature-section .feature-section-image-wrapper img {
-    box-shadow: none;
+.home-case-item {
+    min-width: 0;
+    overflow: hidden;
 }
-.view-services{
+.home-case-item .image-wrapper img {
+    aspect-ratio: 7 / 8;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+.home-case-item:hover .image-wrapper img { transform: scale(1.05); }
+.home-cases-more {
     text-align: center;
-    padding: 10px 0 30px;
+    padding: 45px 20px 60px;
+}
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 1100px) {
+    .home-hero-card { display: none; }
+    .home-equipment-wrap { grid-template-columns: 1fr; gap: 40px; }
+    .home-cases { grid-template-columns: repeat(2, 1fr); }
+}
+@media screen and (max-width: 768px) {
+    .home-hero { min-height: auto; padding: 80px 20px 130px; }
+    .home-hero h1 { font-size: 40px; }
+    .home-hero-content > p { font-size: 16px; }
+    .home-hero-divider { display: none; }
+    .home-equipment { padding: 60px 20px; }
+}
+@media screen and (max-width: 600px) {
+    .home-services { padding: 50px 15px 60px; }
+    .home-hero h1 { font-size: 34px; }
+    .home-equipment-item img { width: 80px; height: 64px; }
+    .home-equipment-item { gap: 14px; padding: 10px 14px 10px 10px; }
+    .home-cases {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .home-case-item { flex: 0 0 85%; scroll-snap-align: start; }
 }

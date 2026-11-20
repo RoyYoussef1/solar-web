@@ -1,17 +1,26 @@
-.services-wrap {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 35px;
-    justify-content: center;
-    padding: 50px 0;
+.services-page-list {
+    background: #faf5ef;
+    padding: 60px 20px 90px;
 }
-@media screen and (max-width: 1200px) {
-    .services-wrap {
-        grid-template-columns: auto auto;
-    }
+.services-page-head {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 45px;
 }
-@media screen and (max-width: 768px) {
-    .services-wrap {
-        grid-template-columns: auto;
-    }
+.services-page-head p {
+    color: #666;
+    line-height: 1.7;
+}
+.services-page-why {
+    padding-top: 60px;
+}
+.services-page-why .services-page-head {
+    margin-bottom: 0;
+}
+.services-page-why .highlights {
+    padding-top: 30px;
+}
+@media screen and (max-width: 600px) {
+    .services-page-list { padding: 40px 15px 60px; }
+    .services-page-why { padding-top: 40px; }
 }
