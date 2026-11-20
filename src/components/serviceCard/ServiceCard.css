@@ -81,3 +81,4 @@
 @media screen and (max-width: 600px) {
     .service-card-grid { grid-template-columns: 1fr; }
 }
+.service-card-static .service-card-body p { padding-bottom: 0; }

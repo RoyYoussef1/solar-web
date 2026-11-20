@@ -58,10 +58,6 @@ const PanelsPage = () => {
                 </tr>
               </tbody>
             </table>
-            {/* <ul>
-              <li>Power: {inverter.specifications.power}</li>
-              <li>Voltage: {inverter.specifications.voltage}</li>
-            </ul> */}
           </div>
           <div className="inverter-page-cta">
             <Button buttonLabel="Download Brochure" buttonURL={panel.URL} />

@@ -23,7 +23,7 @@ const Footer = () => {
               <a href="mailto:SSolarWeb@gmail.com">SSolarWeb@gmail.com</a>
             </div>
             <div className="phone">
-              <a href="tel:(123) 456-7890">(123) 456-7890</a>
+              <a href="tel:+96176348117">+961 76 348 117</a>
             </div>
           </div>
         </div>
@@ -76,14 +76,10 @@ const Footer = () => {
         <div className="footer-column">
           <div className="footer-title">Contact</div>
           <div className="footer-text">
-            60 Brooklyn Golden Street
-            <br />
-            New York 8800 United States
+            Beirut, Lebanon
           </div>
           <div className="footer-social">
-            <SocialIcons
-              socialIcons={["facebook", "instagram", "youtube", "linkedin"]}
-            />
+            <SocialIcons />
           </div>
         </div>
       </div>

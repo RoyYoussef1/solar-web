@@ -54,7 +54,7 @@ const FeatureSection = ({
                 <div className="call-icon"></div>
                 <div className="call-text">
                   <div className="call-question">Have any questions?</div>
-                  <a href="tel:1234567890">+123 456 7890</a>
+                  <a href="tel:+96176348117">+961 76 348 117</a>
                 </div>
               </div>
             </div>

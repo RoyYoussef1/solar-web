@@ -1,56 +1,45 @@
 import React from "react";
-import "./TeamWork.css";
+import { TbMessageCircle, TbSolarPanel2, TbBatteryCharging2, TbHomeBolt } from "react-icons/tb";
+import SectionIntro from "../sectionIntro/SectionIntro";
 import WorkStep from "./WorkStep";
-import icon1 from "../../assets/work-icon/icon-1.jpg";
-import icon2 from "../../assets/work-icon/icon-2.jpg";
-import icon3 from "../../assets/work-icon/icon-3.jpg";
-import icon4 from "../../assets/work-icon/icon-4.jpg";
+import "./TeamWork.css";
+
+const steps = [
+  {
+    icon: TbMessageCircle,
+    title: "Meet Consultant",
+    text: "Discuss your energy needs and goals with our expert consultant to tailor the best solar solution for you.",
+  },
+  {
+    icon: TbSolarPanel2,
+    title: "Generate Power",
+    text: "Our team installs high-efficiency solar panels to start generating clean, renewable energy.",
+  },
+  {
+    icon: TbBatteryCharging2,
+    title: "Save the Energy",
+    text: "Efficiently store the generated energy for consistent and reliable usage throughout the day.",
+  },
+  {
+    icon: TbHomeBolt,
+    title: "Use the Power",
+    text: "Power your home or business with stored solar energy and rely less on traditional sources.",
+  },
+];
 
 const TeamWork = () => {
   return (
-    <>
-      <div className="yellow-banner">
-        <div className="yellow-banner-text">
-            How Our Solar Team Works
-        </div>
+    <section className="process-section">
+      <div className="process-head">
+        <SectionIntro title="How Our Solar Team Works" text="OUR PROCESS" />
+        <p>Four simple steps from first conversation to running on sunshine.</p>
       </div>
-      <div className="steps-section">
-        <div className="work-step-wrapper">
-          <div className="work-step-container">
-            <WorkStep
-              icon={icon1}
-              index={1}
-              title={"Meet Consultant"}
-              text={"Discuss your energy needs and goals with our expert consultant to tailor the best solar solution for you."}
-            />
-          </div>
-          <div className="work-step-container">
-            <WorkStep
-              icon={icon2}
-              index={2}
-              title={"Generate Power"}
-              text={"Our team installs high-efficiency solar panels to start generating clean, renewable energy."}
-            />
-          </div>
-          <div className="work-step-container">
-            <WorkStep
-              icon={icon3}
-              index={3}
-              title={"Save the Energy"}
-              text={"Efficiently store the generated energy for consistent and reliable usage throughout the day."}
-            />
-          </div>
-          <div className="work-step-container">
-            <WorkStep
-              icon={icon4}
-              index={4}
-              title={"Use the Power"}
-              text={"Utilize the stored solar energy to power your home or business, reducing reliance on traditional energy sources."}
-            />
-          </div>
-        </div>
+      <div className="process-steps">
+        {steps.map((step, i) => (
+          <WorkStep key={step.title} index={i + 1} {...step} />
+        ))}
       </div>
-    </>
+    </section>
   );
 };
 

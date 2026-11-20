@@ -41,7 +41,6 @@ const caseStudies = [
 const Home = () => {
   return (
     <div className="home-page">
-      {/* HERO */}
       <section className="home-hero on-dark" style={{ backgroundImage: `url(${HomeHero})` }}>
         <div className="home-hero-inner">
           <div className="home-hero-content">
@@ -89,7 +88,6 @@ const Home = () => {
 
       <Highlights overlap />
 
-      {/* ABOUT */}
       <FeatureSection
         title={"Sustainable Energy Solutions for Modern Living"}
         teaser={"WHO WE ARE"}
@@ -113,7 +111,6 @@ const Home = () => {
         learn={{ buttonLabel: "About Us", buttonURL: "/about" }}
       />
 
-      {/* SERVICES */}
       <section className="home-services">
         <div className="home-section-head">
           <SectionIntro title={"Complete Solar Solutions"} text={"WHAT WE DO"} />
@@ -122,10 +119,8 @@ const Home = () => {
         <ServiceGrid items={services} />
       </section>
 
-      {/* PROCESS */}
       <TeamWork />
 
-      {/* EQUIPMENT */}
       <section className="home-equipment">
         <div className="home-equipment-wrap">
           <div className="home-equipment-text">
@@ -154,7 +149,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CASE STUDIES */}
       <div className="first-home-sec-intro">
         <SectionIntro title={"Latest Case Studies"} text={"RECENT PROJECTS"} />
       </div>
@@ -171,7 +165,6 @@ const Home = () => {
         </Link>
       </div>
 
-      {/* TESTIMONIALS */}
       <Testimonials />
 
       <Generate />

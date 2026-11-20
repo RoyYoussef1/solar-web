@@ -2,7 +2,6 @@ import React from "react";
 import SocialIcons from "../socialIcons/SocialIcons";
 import "./ContactInfo.css";
 
-//Images:
 import Location from "../../assets/location.png";
 import Phone from "../../assets/phone.png";
 import Email from "../../assets/mail.png";
@@ -17,8 +16,7 @@ const ContactInfo = () => {
               <img src={Location} alt="Location" />
             </div>
             <div className="info-text">
-              60 Brooklyn Golden Street <br></br>
-              New York 8800 United States
+              Beirut, Lebanon
             </div>
           </div>
           <div className="info-tab">
@@ -26,7 +24,7 @@ const ContactInfo = () => {
               <img src={Phone} alt="Phone" />
             </div>
             <div className="info-text">
-              <a href="tel:(123) 456-7890">(123) 456-7890</a>
+              <a href="tel:+96176348117">+961 76 348 117</a>
             </div>
           </div>
           <div className="info-tab">

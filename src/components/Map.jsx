@@ -1,6 +1,6 @@
 import React from "react";
 
-const MAP_QUERY = "Brooklyn, New York, United States";
+const MAP_QUERY = "Beirut, Lebanon";
 
 const Map = () => {
   return (

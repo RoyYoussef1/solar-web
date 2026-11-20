@@ -41,10 +41,8 @@ const inverters = [
     specifications: {
       power: "5kW",
       voltage: "230V",
-      // Add more specifications here
     },
   },
-  // Add more inverters here
 ];
 
 export default inverters;

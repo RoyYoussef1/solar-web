@@ -30,6 +30,8 @@ const Services = () => {
         <ServiceGrid items={services} />
       </section>
 
+      <TeamWork />
+      <Testimonials />
       <div className="services-page-why">
         <div className="services-page-head">
           <SectionIntro title="Why Customers Choose Us" text="OUR PROMISE" />
@@ -37,8 +39,6 @@ const Services = () => {
         <Highlights />
       </div>
 
-      <TeamWork />
-      <Testimonials />
       <Generate />
     </div>
   );

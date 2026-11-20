@@ -14,7 +14,6 @@ import Generate from "../../components/generate/Generate";
 import { inverters, solarPanels, Batteries } from "../../data/EquipmentData";
 import "./Equipment.css";
 
-//images
 import equipmentBanner from "../../assets/equipments/equipment-banner.jpg";
 import solarPanel from "../../assets/equipments/solar-panels.jpg";
 import batteries from "../../assets/equipments/batteries.png";

@@ -8,7 +8,6 @@
     line-height: 1.7;
 }
 
-/* ---------- Hero ---------- */
 .home-hero {
     position: relative;
     background-size: cover;
@@ -139,14 +138,13 @@
     font-size: 14px;
 }
 
-/* ---------- Services ---------- */
 .home-services {
     background: #faf5ef;
     padding: 70px 20px 90px;
 }
-/* ---------- Equipment ---------- */
 .home-equipment {
     padding: 90px 20px;
+    border-top: 1px solid #f0ebe4;
 }
 .home-equipment-wrap {
     max-width: 1280px;
@@ -208,7 +206,6 @@
     flex-shrink: 0;
 }
 
-/* ---------- Case studies ---------- */
 .first-home-sec-intro {
     background-color: #FAF5EF;
     text-align: center;
@@ -232,7 +229,6 @@
     text-align: center;
     padding: 45px 20px 60px;
 }
-/* ---------- Responsive ---------- */
 @media screen and (max-width: 1100px) {
     .home-hero-card { display: none; }
     .home-equipment-wrap { grid-template-columns: 1fr; gap: 40px; }

@@ -1,59 +1,44 @@
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { TbStarFilled, TbSolarPanel2, TbHeadset, TbAward } from "react-icons/tb";
+import StatsBackground from "../../assets/stats-background.jpg";
 import "./Stats.css";
 
 const stats = [
-  {
-    value: 320,
-    suffix: "+",
-    title: "Five Star Reviews",
-    icon: "https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-4.png",
-  },
-  {
-    value: 4800,
-    suffix: "+",
-    title: "Panels Installed",
-    icon: "https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-1.png",
-  },
-  {
-    value: 24,
-    suffix: "/7",
-    title: "Technical Support",
-    icon: "https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-2.png",
-  },
-  {
-    value: 12,
-    suffix: "",
-    title: "Years Experience",
-    icon: "https://solam.progressionstudios.com/wp-content/uploads/2022/01/circle-icon-3.png",
-  },
+  { value: 320, suffix: "+", title: "Five Star Reviews", icon: TbStarFilled },
+  { value: 4800, suffix: "+", title: "Panels Installed", icon: TbSolarPanel2 },
+  { value: 24, suffix: "/7", title: "Technical Support", icon: TbHeadset },
+  { value: 12, suffix: "+", title: "Years Experience", icon: TbAward },
 ];
 
 const Stats = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <div className="stats-container" ref={ref}>
-      <div className="statistics-wrap">
-        {stats.map((stat) => (
-          <div key={stat.title} className="statistics-cont">
-            <div className="stat-widget">
-              <img src={stat.icon} alt="" />
+    <section
+      className="stats-section"
+      ref={ref}
+      style={{ backgroundImage: `url(${StatsBackground})` }}
+    >
+      <div className="stats-grid">
+        {stats.map((stat) => {
+          const Icon = stat.icon;
+          return (
+            <div key={stat.title} className="stats-item">
+              <span className="stats-icon">
+                <Icon />
+              </span>
+              <div className="stats-number">
+                {inView ? <CountUp end={stat.value} duration={2.5} separator="," /> : 0}
+                <span className="stats-suffix">{stat.suffix}</span>
+              </div>
+              <div className="stats-title">{stat.title}</div>
             </div>
-            <div className="stat">
-              {inView ? (
-                <CountUp end={stat.value} duration={3} separator="," />
-              ) : (
-                0
-              )}
-              {stat.suffix && <span className="stat-suffix">{stat.suffix}</span>}
-            </div>
-            <div className="stat-title">{stat.title}</div>
-          </div>
-        ))}
+          );
+        })}
       </div>
-    </div>
+    </section>
   );
 };
 

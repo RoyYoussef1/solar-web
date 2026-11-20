@@ -25,7 +25,7 @@ const data = [
     },
     {
         question: `Will I still receive an electric bill if I have solar panels?`,
-        answer: `Unless your solar energy system includes battery storage and you are fully off the grid, you will still receive a bill from your utility. However, you can dramatically reduce your bill or even cut the amount you owe to $0 with a solar panel system that matches your energy use.`
+        answer: `Unless your solar energy system includes battery storage and you are fully off the grid, you will still receive a bill from your utility. However, you can dramatically reduce your bill or even cut it to almost nothing with a solar panel system that matches your energy use.`
     },
     {
         question: `How long will my solar power system last?`,

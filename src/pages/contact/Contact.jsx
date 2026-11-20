@@ -4,15 +4,13 @@ import {
   TbPhone,
   TbMail,
   TbClock,
-  TbBrandFacebook,
-  TbBrandInstagram,
-  TbBrandLinkedin,
 } from "react-icons/tb";
 import "./Contact.css";
 import Banner from "../../components/banner/Banner";
 import BannerImage from "../../assets/Banner2.1.png";
 import Map from "../../components/Map";
 import Form from "../../components/Form";
+import SocialIcons from "../../components/socialIcons/SocialIcons";
 
 const contactItems = [
   {
@@ -20,16 +18,14 @@ const contactItems = [
     label: "Visit Us",
     value: (
       <>
-        60 Brooklyn Golden Street
-        <br />
-        New York 8800 United States
+        Beirut, Lebanon
       </>
     ),
   },
   {
     icon: <TbPhone />,
     label: "Call Us",
-    value: <a href="tel:+11234567890">(123) 456-7890</a>,
+    value: <a href="tel:+96176348117">+961 76 348 117</a>,
   },
   {
     icon: <TbMail />,
@@ -47,12 +43,6 @@ const contactItems = [
       </>
     ),
   },
-];
-
-const socials = [
-  { icon: <TbBrandFacebook />, url: "https://www.facebook.com", label: "Facebook" },
-  { icon: <TbBrandInstagram />, url: "https://www.instagram.com", label: "Instagram" },
-  { icon: <TbBrandLinkedin />, url: "https://www.linkedin.com", label: "LinkedIn" },
 ];
 
 const Contact = () => {
@@ -91,17 +81,7 @@ const Contact = () => {
 
             <div className="contact-socials-row">
               <span>Follow us</span>
-              {socials.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                >
-                  {s.icon}
-                </a>
-              ))}
+              <SocialIcons />
             </div>
           </div>
 
@@ -121,7 +101,7 @@ const Contact = () => {
           </span>
           <div>
             <strong>Our Office</strong>
-            <span>60 Brooklyn Golden Street, New York</span>
+            <span>Beirut, Lebanon</span>
           </div>
         </div>
       </section>

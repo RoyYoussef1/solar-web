@@ -1,22 +1,23 @@
-import React from 'react'
-import './ServiceV2.css'
+import React from "react";
+import "../serviceCard/ServiceCard.css";
 
-const ServiceV2 = ({image, title, text}) => {
+const ServiceV2 = ({ image, title, text, icon: Icon }) => {
   return (
-    <div>
-        <section className="service-v2">
-            <div className="service-v2-cont">
-                <div className="service-v2-image">
-                    <img src={image} alt='service'/>
-                </div>
-                <div className="service-v2-content">
-                    <div className="service-v2-title">{title}</div>
-                    <div className="service-v2-text">{text}</div>
-                </div>
-            </div>
-        </section>
+    <div className="service-card service-card-static">
+      <div className="service-card-image">
+        <img src={image} alt={title} loading="lazy" />
+      </div>
+      <div className="service-card-body">
+        {Icon && (
+          <span className="service-card-icon">
+            <Icon />
+          </span>
+        )}
+        <h3>{title}</h3>
+        <p>{text}</p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ServiceV2
+export default ServiceV2;

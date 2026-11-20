@@ -1,21 +1,14 @@
 import React from "react";
-import "./TeamWork.css";
 
-const WorkStep = ({ icon, title, text, index }) => {
+const WorkStep = ({ icon: Icon, title, text, index }) => {
   return (
-    <div>
-      <div className="work-step">
-        <div className="work-step-icon">
-          <img src={icon} alt="icon" />
-        </div>
-        <div className="work-step-content">
-            <div className="step">STEP</div>
-            <div className="work-step-index">0{index}.</div>
-            <div className="work-step-title">{title}</div>
-            <div className="work-step-line"></div>
-            <div className="work-step-text">{text}</div>
-        </div>
+    <div className="process-step">
+      <div className="process-step-icon">
+        <Icon />
+        <span className="process-step-number">0{index}</span>
       </div>
+      <h3>{title}</h3>
+      <p>{text}</p>
     </div>
   );
 };

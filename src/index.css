@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
 
-/* base styles */
 html, body, #root {
   height: 100%;
 }
@@ -18,7 +17,6 @@ a{
 input, textarea{
   font-family: Raleway, sans-serif;
 }
-/* ---------- Shared buttons ---------- */
 .site-btn {
   display: inline-flex;
   align-items: center;

@@ -2,9 +2,8 @@ import React from "react";
 import Banner from "../../components/banner/Banner";
 import BannerImage from "../../assets/about-banner.jpg";
 import Accordion from "../../components/accordion/Accordion";
-// import DataFetcher from "../../components/DataFetcher";
+import Generate from "../../components/generate/Generate";
 import "./FAQs.css";
-import ChatBot from "../../components/ChatBot";
 
 const FAQs = () => {
   return (
@@ -15,11 +14,10 @@ const FAQs = () => {
         image={BannerImage}
       />
       <Accordion />
-      {/* <DataFetcher /> */}
-      <div className="faq-header">
-        <h2>Have More Questions? Feel free to ask our own Chat Bot: SOLARWEBOT</h2>
-      </div>
-      <ChatBot />
+      <Generate
+        title="Still have questions?"
+        text="Our solar specialists are happy to help. Call us or request a free quote."
+      />
     </div>
   );
 };

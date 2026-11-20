@@ -19,8 +19,8 @@ const Generate = ({
           <Link to="/contact" className="site-btn site-btn-primary">
             Get a Free Quote <TbArrowRight />
           </Link>
-          <a href="tel:+11234567890" className="site-btn site-btn-ghost">
-            Call (123) 456-7890
+          <a href="tel:+96176348117" className="site-btn site-btn-ghost">
+            Call +961 76 348 117
           </a>
         </div>
       </div>

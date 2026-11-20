@@ -40,7 +40,7 @@ const Form = () => {
           </div>
           <div className="form-group">
             <label htmlFor="from_number">Phone Number</label>
-            <input id="from_number" type="tel" name="from_number" placeholder="+1 234 567 890" required />
+            <input id="from_number" type="tel" name="from_number" placeholder="+961 XX XXX XXX" required />
           </div>
         </div>
         <div className="form-group">

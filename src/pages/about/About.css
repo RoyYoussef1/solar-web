@@ -1,25 +1,16 @@
-.service-v2-wrap{
-    display: flex;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px 0;
-    flex-wrap: wrap;
+.about-advantages {
+    background: #faf5ef;
+    padding: 60px 20px 90px;
 }
-@media screen and (max-width: 1200px){
-    .service-v2-wrap{
-        justify-content: center;
-    }
+.about-advantages-head {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 45px;
 }
-@media screen and (max-width: 768px){
-    .service-v2-wrap{
-        padding: 20px 15px 0;
-        gap: 15px;
-    }
-    .service-v2 {
-        max-width: 100%;
-    }
-    .service-v2-content {
-        padding: 20px 10px 20px;
-    }
+.about-advantages-head p {
+    color: #666;
+    line-height: 1.7;
+}
+@media screen and (max-width: 600px) {
+    .about-advantages { padding: 40px 15px 60px; }
 }

@@ -13,8 +13,8 @@ const CTABlockServices = () => {
         </span>
         <h4>Need help choosing?</h4>
         <p>Talk to a solar specialist and get a free quote for your property.</p>
-        <a href="tel:+11234567890" className="cta-block-phone">
-          (123) 456-7890
+        <a href="tel:+96176348117" className="cta-block-phone">
+          +961 76 348 117
         </a>
         <Link to="/contact" className="site-btn site-btn-primary">
           Get a Free Quote <TbArrowRight />

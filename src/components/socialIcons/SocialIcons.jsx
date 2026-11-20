@@ -1,46 +1,43 @@
 import React from "react";
-
-import facebook from "../../assets/socialicons/facebook.png";
-import instagram from "../../assets/socialicons/instagram.png";
-import whatsapp from "../../assets/socialicons/whatsapp.png";
-import youtube from "../../assets/socialicons/youtube.png";
-import linkedin from "../../assets/socialicons/linkedin.png";
-
+import {
+  TbBrandFacebook,
+  TbBrandInstagram,
+  TbBrandLinkedin,
+  TbBrandWhatsapp,
+  TbBrandYoutube,
+} from "react-icons/tb";
 import "./SocialIcons.css";
 
-const socialMediaLinks = {
-  facebook: "https://www.facebook.com",
-  instagram: "https://www.instagram.com",
-  whatsapp: "https://www.whatsapp.com",
-  youtube: "https://www.youtube.com",
-  linkedin: "https://www.linkedin.com",
+const socialMedia = {
+  facebook: { url: "https://www.facebook.com", icon: TbBrandFacebook, label: "Facebook" },
+  instagram: { url: "https://www.instagram.com", icon: TbBrandInstagram, label: "Instagram" },
+  linkedin: { url: "https://www.linkedin.com", icon: TbBrandLinkedin, label: "LinkedIn" },
+  whatsapp: { url: "https://wa.me/96176348117", icon: TbBrandWhatsapp, label: "WhatsApp" },
+  youtube: { url: "https://www.youtube.com", icon: TbBrandYoutube, label: "YouTube" },
 };
 
-const icons = {
-  facebook,
-  instagram,
-  whatsapp,
-  youtube,
-  linkedin,
-};
-
-const SocialIcons = ({ socialIcons }) => {
+const SocialIcons = ({ socialIcons = ["facebook", "instagram", "linkedin", "whatsapp"] }) => {
   return (
     <div className="social-icons">
-      {socialIcons.map((icon) => (
-        <a
-          key={icon}
-          href={socialMediaLinks[icon]}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon"
-        >
-          <img src={icons[icon]} alt={`${icon} icon`} />
-        </a>
-      ))}
+      {socialIcons.map((key) => {
+        const item = socialMedia[key];
+        if (!item) return null;
+        const Icon = item.icon;
+        return (
+          <a
+            key={key}
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={item.label}
+            className="social-icon"
+          >
+            <Icon />
+          </a>
+        );
+      })}
     </div>
   );
 };
 
-export { facebook, instagram, whatsapp, youtube, linkedin };
 export default SocialIcons;

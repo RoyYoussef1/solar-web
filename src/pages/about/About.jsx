@@ -14,6 +14,8 @@ import TeamWork from "../../components/teamWork/TeamWork";
 import Testimonials from "../../components/firebase/Testimonials";
 import Generate from "../../components/generate/Generate";
 import Stats from "../../components/firebase/Stats";
+import SectionIntro from "../../components/sectionIntro/SectionIntro";
+import { TbLeaf, TbTool, TbShieldCheck } from "react-icons/tb";
 
 const About = () => {
   return (
@@ -23,11 +25,6 @@ const About = () => {
         teaser={"Specializing in Green Technology"}
         image={BannerImage}
       />
-      <div className="service-v2-wrap">
-        <ServiceV2 image={ServiceV2Image1} title={'Renewable Source'} text={'Harness the power of renewable energy to reduce carbon footprints and promote sustainability. Embrace the future with clean and green energy solutions.'}/>
-        <ServiceV2 image={ServiceV2Image2} title={'Easy Installation'} text={'Our solar panels are designed for quick and hassle-free installation, ensuring that you can start benefiting from solar energy without any delays or complications.'}/>
-        <ServiceV2 image={ServiceV2Image3} title={'Low Maintenance'} text={'Enjoy the convenience of low maintenance solar systems. Our products are built to last, requiring minimal upkeep while providing maximum efficiency and reliability.'}/>
-      </div>
       <FeatureSection
         title={"Energy Source for a Better Life"}
         teaser={"OUR INTRODUCTION"}
@@ -38,12 +35,12 @@ const About = () => {
         isImageRight={true}
         featuresWithIcon={[
           {
-            icon: IconImage1, // path to your icon image
+            icon: IconImage1,
             title: "Reduce Your Daily Energy Use",
             text: "Cut down on energy costs with our efficient solutions designed to minimize daily consumption.",
           },
           {
-            icon: IconImage2, // path to your icon image
+            icon: IconImage2,
             title: "The Most Used Energy Systems",
             text: "Our systems are widely adopted, providing reliable and efficient energy for various needs.",
           },
@@ -53,9 +50,35 @@ const About = () => {
           buttonURL: "/services",
         }}
       />
+      <section className="about-advantages">
+        <div className="about-advantages-head">
+          <SectionIntro title="Why Go Solar With Us" text="OUR ADVANTAGES" />
+          <p>Clean energy that is simple to install and easy to live with.</p>
+        </div>
+        <div className="service-card-grid">
+          <ServiceV2
+            icon={TbLeaf}
+            image={ServiceV2Image1}
+            title={"Renewable Source"}
+            text={"Harness the power of renewable energy to reduce carbon footprints and promote sustainability. Embrace the future with clean and green energy solutions."}
+          />
+          <ServiceV2
+            icon={TbTool}
+            image={ServiceV2Image2}
+            title={"Easy Installation"}
+            text={"Our solar panels are designed for quick and hassle-free installation, so you can start benefiting from solar energy without delays or complications."}
+          />
+          <ServiceV2
+            icon={TbShieldCheck}
+            image={ServiceV2Image3}
+            title={"Low Maintenance"}
+            text={"Our systems are built to last, requiring minimal upkeep while providing maximum efficiency and reliability year after year."}
+          />
+        </div>
+      </section>
       <Stats />
-      <Testimonials />
       <TeamWork />
+      <Testimonials />
       <Generate />
     </div>
   );
