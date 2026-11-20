@@ -1,6 +1,6 @@
 .services-page-list {
     background: #faf5ef;
-    padding: 60px 20px 90px;
+    padding: 50px 20px;
 }
 .services-page-head {
     text-align: center;
@@ -21,6 +21,8 @@
     padding-top: 30px;
 }
 @media screen and (max-width: 600px) {
-    .services-page-list { padding: 40px 15px 60px; }
+    .services-page-list { padding: 30px 15px; }
     .services-page-why { padding-top: 40px; }
+    .services-page-head { margin-bottom: 15px; }
+    .services-page-why .highlights { padding-top: 12px; }
 }

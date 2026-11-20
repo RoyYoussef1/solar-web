@@ -1,6 +1,6 @@
 .about-advantages {
     background: #faf5ef;
-    padding: 60px 20px 90px;
+    padding: 50px 20px;
 }
 .about-advantages-head {
     text-align: center;
@@ -12,5 +12,6 @@
     line-height: 1.7;
 }
 @media screen and (max-width: 600px) {
-    .about-advantages { padding: 40px 15px 60px; }
+    .about-advantages { padding: 30px 15px 40px; }
+    .about-advantages-head { margin-bottom: 15px; }
 }

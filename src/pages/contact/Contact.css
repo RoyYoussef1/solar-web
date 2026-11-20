@@ -3,7 +3,7 @@
     background-image: url('../../assets/gransolar-epc-constructor.png');
     background-size: cover;
     background-position: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 .contact-quote::before {
     content: "";
@@ -14,7 +14,7 @@
 .contact-quote-wrap {
     position: relative;
     z-index: 1;
-    max-width: 1280px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 5fr 6fr;
@@ -139,7 +139,7 @@
 .contact-map-card {
     position: absolute;
     top: 30px;
-    left: max(20px, calc((100% - 1280px) / 2));
+    left: max(20px, calc((100% - 1400px) / 2));
     background: #fff;
     padding: 18px 22px;
     border-radius: 8px;
@@ -170,10 +170,22 @@
 }
 @media screen and (max-width: 768px) {
     .contact-quote {
-        padding: 60px 15px;
+        padding: 40px 20px;
     }
     .contact-quote-info h2 {
-        font-size: 36px;
+        font-size: 28px;
+    }
+    .contact-eyebrow {
+        font-size: 12px;
+    }
+    .contact-lead {
+        font-size: 14px;
+    }
+    .contact-quote-card h3 {
+        font-size: 20px;
+    }
+    .contact-quote-card > p {
+        font-size: 14px;
     }
     .contact-quote-card {
         padding: 30px 22px;

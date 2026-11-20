@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 30px;
+    padding: 10px 30px;
 }
 
 .navigation-links {
@@ -168,7 +168,7 @@ ul.mobile-menu-links {
     }
 
     .navigation-container {
-        padding: 15px 10px;
+        padding: 10px;
     }
 
     .navigation-links,
@@ -191,7 +191,7 @@ ul.mobile-menu-links {
     }
 
     .logo-container {
-        max-width: 125px;
+        max-width: 100px;
         padding-right: 15px;
     }
 }

@@ -3,8 +3,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
 }
 h4 {
     color: #AEAEAE;
@@ -17,7 +15,7 @@ h4 {
 h1 {
     margin: 0;
     font-size: 40px;
-    max-width: 500px;
+    max-width: 800px;
     line-height: 1.3;
     font-weight: 700;
 }

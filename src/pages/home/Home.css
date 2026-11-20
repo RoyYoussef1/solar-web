@@ -12,7 +12,7 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    min-height: 680px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     padding: 110px 20px 150px;
@@ -26,7 +26,7 @@
 .home-hero-inner {
     position: relative;
     z-index: 1;
-    max-width: 1280px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -71,7 +71,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    margin: 36px 0 40px;
+    margin: 20px 0;
 }
 .home-hero-trust {
     display: flex;
@@ -140,14 +140,14 @@
 
 .home-services {
     background: #faf5ef;
-    padding: 70px 20px 90px;
+    padding: 50px 20px 50px;
 }
 .home-equipment {
-    padding: 90px 20px;
+    padding: 50px 20px;
     border-top: 1px solid #f0ebe4;
 }
 .home-equipment-wrap {
-    max-width: 1280px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 5fr 6fr;
@@ -227,7 +227,7 @@
 .home-case-item:hover .image-wrapper img { transform: scale(1.05); }
 .home-cases-more {
     text-align: center;
-    padding: 45px 20px 60px;
+    padding: 45px 20px 40px;
 }
 @media screen and (max-width: 1100px) {
     .home-hero-card { display: none; }
@@ -235,14 +235,15 @@
     .home-cases { grid-template-columns: repeat(2, 1fr); }
 }
 @media screen and (max-width: 768px) {
-    .home-hero { min-height: auto; padding: 80px 20px 130px; }
+    .home-hero { min-height: auto; padding: 60px 20px 100px; }
     .home-hero h1 { font-size: 40px; }
     .home-hero-content > p { font-size: 16px; }
     .home-hero-divider { display: none; }
-    .home-equipment { padding: 60px 20px; }
+    .home-equipment { padding: 40px 20px; }
+    .home-equipment-text p { padding-bottom: 20px; }
 }
 @media screen and (max-width: 600px) {
-    .home-services { padding: 50px 15px 60px; }
+    .home-services { padding: 40px 15px 40px; }
     .home-hero h1 { font-size: 34px; }
     .home-equipment-item img { width: 80px; height: 64px; }
     .home-equipment-item { gap: 14px; padding: 10px 14px 10px 10px; }
@@ -253,4 +254,5 @@
         -webkit-overflow-scrolling: touch;
     }
     .home-case-item { flex: 0 0 85%; scroll-snap-align: start; }
+    .home-equipment-wrap { gap: 24px; }
 }

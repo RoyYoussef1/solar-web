@@ -1,6 +1,6 @@
 .projects-container {
     padding: 60px 20px 80px;
-    max-width: 1280px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -160,6 +160,9 @@
         grid-template-columns: 1fr;
     }
     .projects-container {
-        padding: 40px 15px 60px;
+        padding: 40px 15px;
+    }
+    .project-body {
+        padding: 20px;
     }
 }

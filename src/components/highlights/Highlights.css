@@ -8,7 +8,7 @@
     margin-top: -75px;
 }
 .highlights-wrap {
-    max-width: 1280px;
+    max-width: 1400px;
     margin: 0 auto;
     background: #fff;
     border-radius: 10px;
@@ -18,8 +18,9 @@
 }
 .highlight {
     display: flex;
-    gap: 15px;
-    padding: 32px 26px;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 28px 24px;
     border-right: 1px solid #f0ebe4;
 }
 .highlight:last-child { border-right: none; }
@@ -38,7 +39,8 @@
 }
 .highlight:hover .highlight-icon { background: #f6a235; color: #fff; }
 .highlight h4 {
-    margin: 2px 0 6px;
+    padding-top: 4px;
+    padding-bottom: 12px;
     font-size: 16px;
     color: #1a1819;
 }
@@ -54,7 +56,7 @@
 }
 @media screen and (max-width: 600px) {
     .highlights-wrap { grid-template-columns: 1fr; }
-    .highlight { border-right: none; border-bottom: 1px solid #f0ebe4; padding: 22px; }
+    .highlight { border-right: none; border-bottom: 1px solid #f0ebe4; padding: 20px; }
     .highlight:last-child { border-bottom: none; }
-    .highlights { padding: 50px 15px; }
+    .highlights { padding: 30px 15px; }
 }

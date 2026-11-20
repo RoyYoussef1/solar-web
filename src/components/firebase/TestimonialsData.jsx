@@ -1,4 +1,5 @@
 import React from "react";
+import CarouselDots, { useSnapCarousel } from "../carousel/CarouselDots";
 import "./Testimonials.css";
 
 const testimonials = [
@@ -35,17 +36,22 @@ const testimonials = [
 ];
 
 const TestimonialsData = () => {
+  const { trackRef, active, onScroll, goTo } = useSnapCarousel();
+
   return (
-    <div className="testimonial-container">
-      {testimonials.map((testimonial) => (
-        <div key={testimonial.name} className="testimonial">
-          <div className="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p className="testimonial-text">{testimonial.text}</p>
-          <p className="client-name">{testimonial.name}</p>
-          <p className="client-position">{testimonial.position}</p>
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="testimonial-container" ref={trackRef} onScroll={onScroll}>
+        {testimonials.map((testimonial) => (
+          <div key={testimonial.name} className="testimonial">
+            <div className="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p className="testimonial-text">{testimonial.text}</p>
+            <p className="client-name">{testimonial.name}</p>
+            <p className="client-position">{testimonial.position}</p>
+          </div>
+        ))}
+      </div>
+      <CarouselDots count={testimonials.length} active={active} onSelect={goTo} label="testimonial" />
+    </>
   );
 };
 

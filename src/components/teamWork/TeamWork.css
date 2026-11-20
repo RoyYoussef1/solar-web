@@ -1,5 +1,5 @@
 .process-section {
-    padding: 70px 20px 90px;
+    padding: 50px 20px 50px;
     background: #fff;
 }
 .process-head {
@@ -13,7 +13,7 @@
 }
 .process-steps {
     position: relative;
-    max-width: 1280px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -86,7 +86,30 @@
     }
     .process-steps::before { display: none; }
 }
+@media screen and (max-width: 768px) {
+    .process-steps {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 10px 2px 20px;
+    }
+    .process-steps::-webkit-scrollbar { display: none; }
+    .process-step {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
+        box-sizing: border-box;
+        background: #faf5ef;
+        border-radius: 10px;
+        padding: 30px 22px;
+    }
+    .process-step-icon { box-shadow: 0 0 0 8px #faf5ef; background: #fff; }
+    .process-step-number { border-color: #faf5ef; }
+    .process-head { max-width: 100%; margin-bottom: 15px; }
+    .process-step h3 { font-size: 18px; }
+}
 @media screen and (max-width: 560px) {
-    .process-steps { grid-template-columns: 1fr; }
-    .process-section { padding: 50px 15px 60px; }
+    .process-section { padding: 30px 15px 40px; }
 }

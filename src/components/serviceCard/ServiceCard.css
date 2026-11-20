@@ -1,5 +1,5 @@
 .service-card-grid {
-    max-width: 1280px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -80,5 +80,12 @@
 }
 @media screen and (max-width: 600px) {
     .service-card-grid { grid-template-columns: 1fr; }
+    .service-card-body h3 { font-size: 18px; }
+    .service-card-body { padding: 44px 20px 20px; }
+    .service-card-icon {
+        width: 52px;
+        height: 52px;
+    }
+    .service-card-grid { gap: 20px; }
 }
 .service-card-static .service-card-body p { padding-bottom: 0; }
