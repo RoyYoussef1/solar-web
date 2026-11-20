@@ -244,7 +244,7 @@
 }
 @media screen and (max-width: 600px) {
     .home-services { padding: 40px 15px 40px; }
-    .home-hero h1 { font-size: 34px; }
+    .home-hero h1 { font-size: 32px; }
     .home-equipment-item img { width: 80px; height: 64px; }
     .home-equipment-item { gap: 14px; padding: 10px 14px 10px 10px; }
     .home-cases {

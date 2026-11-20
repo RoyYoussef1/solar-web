@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
+import BackToTop from "./components/backToTop/BackToTop";
 import Inverters from "./pages/equipment/Inverters/Inverters";
 import InverterPage from "./pages/equipment/Inverters/InverterPage";
 import Home from "./pages/home/Home";
@@ -48,6 +49,7 @@ function App() {
           <Route path="/calculations" element={<Calculations />} />
         </Routes>
         <Footer />
+        <BackToTop />
       </div>
     </Router>
   );
