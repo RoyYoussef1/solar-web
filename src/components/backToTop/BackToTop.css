@@ -29,8 +29,8 @@
     background: #1a1819;
 }
 .back-to-top svg {
-    width: 26px;
-    height: 26px;
+    width: 22px;
+    height: 22px;
     stroke-width: 2.5;
     flex-shrink: 0;
     transition: transform 0.3s ease;
